@@ -49,7 +49,6 @@
     align-items: flex-end;
     justify-content: center;
     .section-text-wrapper {
-        border: 1px solid white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,17 +57,22 @@
         h2 {
             color: white;
             font-size: 55px;
-            font-weight: 400;
+            font-weight: 500;
         }
         h3 {
             color: white;
-            font-size: 25px;
-            padding-top: 15px;
-            width: 40%;
+            font-size: 27px;
+            padding-top: 10px;
+            width: 35%;
             text-align: center;
+            font-weight: 300;
         }
         a {
-            color: $link-color;
+            color: #2580df;
+            padding-top: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            
         }
     }
 }
