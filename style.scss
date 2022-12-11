@@ -4,3 +4,15 @@
 .section1 p {
     font-family: $font;
 }
+
+footer {
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+
+    .footerContent {
+        height: 28rem;
+        border: 1px solid black;
+    }
+}
