@@ -6,7 +6,9 @@
     height: 6.5vh;
     font-family: $font;
     color: $nav-li-color;
-    position: static;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(15px);
     .fa-apple {
         color: $nav-li-color;
         opacity: 0.9;
