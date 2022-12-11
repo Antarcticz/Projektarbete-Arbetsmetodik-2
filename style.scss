@@ -4,7 +4,12 @@
 
 @import "partials/mixins";
 
+
+@import "partials/footer";
+
+
 @import "partials/homepage";
+
 
 
 * {
@@ -15,11 +20,14 @@
 
 footer {
     height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     background-color: #f5f5f7;
 
     .footerContent {
+        height: auto;
+        width: auto;
         @include size(auto, auto);
 
     }
@@ -29,12 +37,20 @@ footer {
         display: flex;
 
         .contentUpperFooter {
+            height: 24rem;
+            width: 14rem;
+
             @include size(14rem, 27.5rem);
 
             h3 {
+                font-size: 0.8rem;
+                font-family: 'Roboto';
                 @include text-size-footer (0.75rem, 'Roboto');
                 font-weight: 500;
+                color: #1D1D1F;
+                opacity: 0.9;
                 color: $h3-footer-color;
+                margin-top: 15px;
 
 
             }
@@ -42,11 +58,10 @@ footer {
 
             li {
                 list-style: none;
+                width: 11.2rem;
+                height: auto;
                 @include size(11.2, auto);
-                position: relative;
-                right: 2.4rem;
-                bottom: 0.8rem;
-                margin-top: 7px;
+                margin-top: 5px;
 
 
             }
@@ -56,6 +71,7 @@ footer {
                 color: #525255;
                 font-family: 'Roboto';
                 font-weight: 300;
+                font-size: 0.8rem;
                 font-size: 0.74rem;
             }
         }
@@ -63,11 +79,15 @@ footer {
     }
 
     .navFooterBottom {
+        width: 100%;
+        height: 7.5rem;
         @include size(100%, 7.5rem);
         display: flex;
         flex-direction: column;
 
         .navFooterBottomTop {
+            width: 100%;
+            height: 3rem;
             @include size(100%, 3rem);
 
             p {
@@ -90,6 +110,8 @@ footer {
         }
 
         .navFooterBottomBottom {
+            width: auto;
+            height: auto;
             @include size(auto, auto);
             display: flex;
             flex-direction: row;
