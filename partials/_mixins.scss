@@ -1,4 +1,4 @@
-@mixin flex($direction, $justify, $align, $wrap:nowrap) {
+@mixin flex($direction, $justify, $align, $wrap: nowrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
@@ -15,4 +15,9 @@
     font-size: $font-size;
     font-weight: $font-weight;
     text-align: $text-align;
+}
+
+@mixin text-size-footer($font-size, $font-family, ) {
+    font-size: $font-size;
+    font-family: $font-family;
 }
