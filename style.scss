@@ -1,6 +1,12 @@
 @import "partials/variables";
+
+@import "partials/navigation";
+
 @import "partials/mixins";
 
-.section1 p {
-    font-family: $font;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
