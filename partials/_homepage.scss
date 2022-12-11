@@ -1,0 +1,35 @@
+.section1 {
+    background-image: url("/index-images/iphone.jpg");
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $font;
+    .section-text-wrapper {
+        height: 40%;
+        @include flex (column, center, center,);
+        h2 {
+            @include text-size (55px, 500, center);
+        }
+        h3 {
+            @include text-size (27px, 300, center);
+        }
+        .section-buttons-wrapper {
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: $link-color;
+                font-size: 20px;
+                font-weight: 100;
+                i {
+                    font-size: 12px;
+                }
+            }
+            a:last-of-type  {
+                padding-left: 30px;
+            }
+        }
+    }
+}
