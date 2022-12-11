@@ -116,9 +116,10 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 6vh;
+  height: 6.5vh;
   font-family: Arial, Helvetica, sans-serif;
   color: #f5f5f7;
+  position: static;
 }
 .top-navigation .fa-apple {
   color: #f5f5f7;
@@ -150,6 +151,84 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
   text-decoration: none;
   font-size: 12px;
   opacity: 0.7;
+}
+
+.section1 {
+  background-image: url("/index-images/iphone.jpg");
+  height: 85vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section1 .section-text-wrapper {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.section1 .section-text-wrapper h2 {
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+.section1 .section-text-wrapper h3 {
+  font-size: 27px;
+  font-weight: 300;
+  text-align: center;
+}
+.section1 .section-text-wrapper .section-buttons-wrapper {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.section1 .section-text-wrapper .section-buttons-wrapper a {
+  text-decoration: none;
+  color: #0066CC;
+  font-size: 20px;
+  font-weight: 100;
+}
+.section1 .section-text-wrapper .section-buttons-wrapper a i {
+  font-size: 12px;
+}
+.section1 .section-text-wrapper .section-buttons-wrapper a:last-of-type {
+  padding-left: 30px;
+}
+
+.section2 {
+  background-image: url("/index-images/hero_startframe.jpg");
+  margin-top: 15px;
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.section2 .section-text-wrapper {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+.section2 .section-text-wrapper h2 {
+  color: white;
+  font-size: 55px;
+  font-weight: 400;
+}
+.section2 .section-text-wrapper h3 {
+  color: white;
+  width: 50%;
+  border: 1px solid white;
+}
+.section2 .section-text-wrapper a {
+  color: #0066CC;
 }
 
 * {
