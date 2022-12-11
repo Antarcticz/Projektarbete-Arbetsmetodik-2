@@ -33,3 +33,37 @@
         }
     }
 }
+
+.section2 {
+    background-image: url("/index-images/hero_startframe.jpg");
+    margin-top: 15px;
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $font;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .section-text-wrapper {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+        h2 {
+            color: white;
+            font-size: 55px;
+            font-weight: 400;
+        }
+        h3 {
+            color: white;
+            width: 50%;
+            border: 1px solid white;
+        }
+        a {
+            color: $link-color;
+        }
+    }
+}
