@@ -173,12 +173,7 @@ main {
             }
 
             #lowerLink {
-                font-size: 1.1rem;
-                position: relative;
-                top: 1rem;
-                margin: 10px;
-                color: #217bcf;
-                text-decoration: none;
+                @include lowerLinks(1.1rem);
             }
         }
 

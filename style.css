@@ -251,6 +251,9 @@ main .cards-content .iphone-wrapper #lowerLink {
   color: #217bcf;
   text-decoration: none;
 }
+main .cards-content .iphone-wrapper #lowerLink:hover {
+  text-decoration: underline;
+}
 main .cards-content .ipad-wrapper {
   background-color: #fbfbfb;
   width: 49.5%;
@@ -284,6 +287,9 @@ main .cards-content .ipad-wrapper #lowerLink {
   margin: 10px;
   color: #217bcf;
   text-decoration: none;
+}
+main .cards-content .ipad-wrapper #lowerLink:hover {
+  text-decoration: underline;
 }
 main .cards-content .airpods-wrapper {
   width: 49.5%;
@@ -328,6 +334,9 @@ main .cards-content .airpods-wrapper .airpods-logo-card #lowerLink {
   color: #217bcf;
   text-decoration: none;
 }
+main .cards-content .airpods-wrapper .airpods-logo-card #lowerLink:hover {
+  text-decoration: underline;
+}
 main .cards-content .blackwatch-wrapper {
   width: 49.5%;
   height: 36.65rem;
@@ -367,6 +376,9 @@ main .cards-content .blackwatch-wrapper .airpods-logo-card #lowerLink {
   margin: 10px;
   color: #217bcf;
   text-decoration: none;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card #lowerLink:hover {
+  text-decoration: underline;
 }
 main .cards-content .whitewatch-wrapper {
   width: 49.5%;
@@ -408,6 +420,9 @@ main .cards-content .whitewatch-wrapper .airpods-logo-card #lowerLink {
   color: #217bcf;
   text-decoration: none;
 }
+main .cards-content .whitewatch-wrapper .airpods-logo-card #lowerLink:hover {
+  text-decoration: underline;
+}
 main .cards-content .speaker-wrapper {
   background-color: #fbfbfb;
   width: 49.5%;
@@ -433,6 +448,9 @@ main .cards-content .speaker-wrapper #lowerLink {
   margin: 10px;
   color: #217bcf;
   text-decoration: none;
+}
+main .cards-content .speaker-wrapper #lowerLink:hover {
+  text-decoration: underline;
 }
 
 footer {

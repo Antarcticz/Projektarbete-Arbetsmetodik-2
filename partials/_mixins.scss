@@ -53,4 +53,8 @@
     margin: 10px;
     color: #217bcf;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
