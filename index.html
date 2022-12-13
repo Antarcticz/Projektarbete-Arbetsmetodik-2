@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/3e10381a88.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Projektarbete - Apple Hemsida</title>
 </head>
@@ -90,42 +91,138 @@
     </section>
 
     <main>
-        <div>
-            <h4>iPhone 14 Pro</h4>
-            <h5>Pro. Beyond.</h5>
-            <a href="#">Learn more ></a><a href="#">Buy ></a>
-        </div>
-        <div>
-            <h4>iPad</h4>
-            <h5>Loveable. Drawable. Magical</h5>
-            <a href="#">Learn more ></a><a href="#">Buy ></a>
-        </div>
-        <div>
-            <h4>AirPids</h4>
-            <h5>Share the joy.</h5>
-            <a href="#">Shop ></a>
-        </div>
-        <div>
-            <h4><i class="fa fa-apple"></i>WATCH</h4>
-            <h5>ULTRA</h5>
-            <h4>Adventure awaits</h4>
-            <a href="#">Learn more ></a><a href="#">Buy ></a>
-        </div>
-        <div>
-            <h4><i class="fa fa-apple"></i>WATCH</h4>
-            <h5>SERIES 8</h5>
-            <a href="#">Learn more ></a><a href="#">Buy ></a>
-        </div>
-        <div>
-            <h4>iPad Pro</h4>
-            <h5>Supercharged by</h5>
-            <a href="#">Learn more ></a><a href="#">Buy ></a>
-        </div>
+        <section class="cards-content">
+            <div class="iphone-wrapper">
+                <a href="" class="iphone-wrapper">
+                    <h4>IPhone 14 Pro</h4>
+                    <h5>Pro. Beyond.</h5>
+                </a>
+                <a id="lowerLink" href="">Learn more ></a> <a id="lowerLink" href="">Buy ></a>
+            </div>
+
+
+            <div class="ipad-wrapper">
+                <a href="" class="iphone-wrapper">
+                    <h4>iPad</h4>
+                    <h5>Loveable. Drawable. Magical</h5>
+                </a>
+                <a id="lowerLink" href="">Learn more ></a> <a id="lowerLink" href="">Buy ></a>
+            </div>
+            <div class="airpods-wrapper">
+                <div class="airpods-logo-card">
+                    <img id="apple-gift" src="/index-images/apple-gift.png" alt="">
+                    <a href="" class="iphone-wrapper">
+                        <h4> AirPods</h4>
+                        <h5>Share the joy.</h5>
+                    </a>
+                    <a id="lowerLink" href="">Shop></a>
+                </div>
+            </div>
+            <div class="blackwatch-wrapper">
+                <div class="airpods-logo-card">
+                    <h4><img id="apple-watch-series" src="/index-images/apple_watch_series_8.png" alt=""></h4>
+                    <a href="" class="iphone-wrapper">
+                        <h5>A healthy leap ahead.</h5>
+                    </a>
+                    <a id="lowerLink" href="">Learn more ></a> <a id="lowerLink" href="lowerLink">Buy ></a>
+                </div>
+            </div>
+            <div class="whitewatch-wrapper">
+                <div class="airpods-logo-card">
+                    <h4><img id="apple-watch-series" src="/index-images/apple_watch_ultra.png" alt=""></h4>
+                    <a href="" class="iphone-wrapper">
+                        <h5>Adventure awaits.</h5>
+                    </a>
+                    <a id="lowerLink" href="">Learn more ></a> <a id="lowerLink" href="lowerLink">Buy ></a>
+                </div>>
+            </div>
+            <div class="speaker-wrapper">
+                <a href="" class="iphone-wrapper">
+                    <h4>HomePod mini</h4>
+                </a>
+                <a id="lowerLink" href="">Learn more ></a> <a id="lowerLink" href="">Buy ></a>
+            </div>
+        </section>
     </main>
 
-    <section class="carousel">
-        <h2>test</h2>
-    </section>
+
+    <div id="carousel">
+        <section class="slide-container">
+            <span class="slider-span" id="slider-span1"></span>
+            <span class="slider-span" id="slider-span2"></span>
+            <span class="slider-span" id="slider-span3"></span>
+            <span class="slider-span" id="slider-span4"></span>
+            <span class="slider-span" id="slider-span5"></span>
+            <span class="slider-span" id="slider-span6"></span>
+            <span class="slider-span" id="slider-span7"></span>
+            <span class="slider-span" id="slider-span8"></span>
+            <span class="slider-span" id="slider-span9"></span>
+            <span class="slider-span" id="slider-span10"></span>
+            <span class="slider-span" id="slider-span11"></span>
+
+            <div class="image-slider">
+                <div class="slides-div" id="slide-1">
+                    <img src="/index-images/Emancipation.jpeg" alt="" class="img" id="img">
+                    <div class="carousel-button-wrapper">
+                        <button class="streamnow-btn">Stream now <i class="fa-solid fa-circle-play"></i></button>
+                        <h4><span class="dramathick">Drama</span> &bull; Inspired by a gripping true story.</h4>
+                    </div>
+                    <a href="#slider-span1" class="button" id="button-1"></a>
+                </div>
+                <div class="slides-div" id="slide-2">
+                    <img src="/index-images/Spirited.jpeg" alt="" class="img" id="img">
+                    <div class="carousel-button-wrapper">
+                        <button class="streamnow-btn">Stream now <i class="fa-solid fa-circle-play"></i></button>
+                        <h4><span class="dramathick">Comedy</span> &bull; Start your holidays on a high note.</h4>
+                    </div>
+                    <a href="#slider-span2" class="button" id="button-2"></a>
+                </div>
+                <div class="slides-div" id="slide-3">
+                    <img src="/index-images/Ted-Lasso.jpeg" alt="" class="img" id="img">
+                    <div class="carousel-button-wrapper">
+                        <button class="streamnow-btn">Stream now <i class="fa-solid fa-circle-play"></i></button>
+                        <h4><span class="dramathick">Comedy</span> &bull; Emmy wins including Outstanding Comedy.</h4>
+                    </div>
+                    <a href="#slider-span3" class="button" id="button-3"></a>
+                </div>
+                <div class="slides-div" id="slide-4">
+                    <img src="/index-images/Echo3.jpeg" alt="" class="img" id="img">
+                    <div class="carousel-button-wrapper">
+                        <button class="streamnow-btn">Stream now <i class="fa-solid fa-circle-play"></i></button>
+                        <h4><span class="dramathick">Thriller</span> &bull; The rescue is only the beginning.</h4>
+                    </div>
+                    <a href="#slider-span4" class="button" id="button-4"></a>
+                </div>
+                <div class="slides-div" id="slide-5">
+                    <img src="/index-images/charlie-brown.jpeg" alt="" class="img" id="img">
+                    <div class="carousel-button-wrapper">
+                        <button class="streamnow-btn">Stream now <i class="fa-solid fa-circle-play"></i></button>
+                        <h4><span class="dramathick">Holiday</span> &bull; Happiness is the holidays!</h4>
+                    </div>
+                    <a href="#slider-span5" class="button" id="button-5"></a>
+                </div>
+                <div class="slides-div" id="slide-6">
+                    <img src="/index-images/little-america.jpeg" alt="" class="img" id="img">
+                    <div class="carousel-button-wrapper">
+                        <button class="streamnow-btn">Stream now <i class="fa-solid fa-circle-play"></i></button>
+                        <h4><span class="dramathick">Comedy</span> &bull; New season.</h4>
+                    </div>
+                    <a href="#slider-span6" class="button" id="button-6"></a>
+                </div>
+                <div class="slides-div" id="slide-7">
+                    <img src="/index-images/selena-gomez.jpeg" alt="" class="img" id="img">
+                    <div class="carousel-button-wrapper">
+                        <button class="streamnow-btn">Stream now <i class="fa-solid fa-circle-play"></i></button>
+                        <h4><span class="dramathick">Documentary</span> &bull; Every breath, a breakthrough.</h4>
+                    </div>
+                    <a href="#slider-span7" class="button" id="button-7"></a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
 
     <footer>
         <div class="footerContent">
