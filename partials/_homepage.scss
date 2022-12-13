@@ -4,7 +4,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: $font;
     .section-text-wrapper {
         height: 40%;
         @include flex (column, center, center,);
@@ -20,15 +19,18 @@
             align-items: center;
             a {
                 text-decoration: none;
-                color: $link-color;
+                color: $link-color-light-bg;
                 font-size: 20px;
-                font-weight: 100;
+                font-weight: 300;
                 i {
                     font-size: 12px;
                 }
             }
             a:last-of-type  {
                 padding-left: 30px;
+            }
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
@@ -37,16 +39,14 @@
 .section2 {
     background-image: url("/index-images/hero_startframe.jpg");
     margin-top: 15px;
-    height: 95vh;
+    height: 85vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: $font;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     .section-text-wrapper {
-        border: 1px solid white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,18 +55,33 @@
         h2 {
             color: white;
             font-size: 55px;
-            font-weight: 400;
+            font-weight: 500;
         }
         h3 {
             color: white;
-            width: 50%;
-            border: 1px solid white;
+            font-size: 27px;
+            padding-top: 10px;
+            width: 35%;
+            text-align: center;
+            font-weight: 300;
         }
         a {
-            color: $link-color;
+            color: $link-color-dark-bg;
+            padding-top: 20px;
+            font-size: 20px;
+            text-decoration: none;
+
+            i {
+                font-size: 12px;
+            }
+            
+        }
+        a:hover {
+            text-decoration: underline;
         }
     }
 }
+
 
 .slide-container {
     width: 100%;
@@ -200,4 +215,51 @@
 }
 .slides-div:nth-of-type(5) .carousel-button-wrapper h4 {
     text-shadow: 2px 2px 8px  black;
+}
+
+.section3 {
+    @include flex(column, center, center, nowrap);
+    @include background-image(url("index-images/hero_dvs.jpg"));
+    @include size(100%, 85vh);     
+    margin-top: 1rem;
+
+    .section-text-wrapper {
+        @include flex(column, flex-start, center, nowrap);
+        @include size(50%, 70vh);
+        @include text-size(1rem, 600, center);
+        color: #fff;
+
+        .section-logo-wrapper {
+            @include background-image(url("index-images/card_logo.png"));
+            @include size(23%, 8vh);
+        }
+        h3 {
+            @include text-size(1.7rem, 400, center);
+            width: 50%;
+        }
+        h6 {
+            @include text-size(1.3rem, 400, center);
+            margin-top: 1rem;
+        }
+        .section-a-wrapper {
+            @include flex(row, space-between, center, nowrap);
+            width: 29%;
+            margin-top: 1rem;
+            
+            a {
+                @include text-size(20px, 400, center);
+                color: $link-color-dark-bg;
+                text-decoration: none;
+
+                i {
+                    font-size: 0.8rem;
+                }
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
 }

@@ -1,21 +1,14 @@
 @import "partials/variables";
-
 @import "partials/navigation";
-
 @import "partials/mixins";
-
-
-@import "partials/footer";
-
-
 @import "partials/homepage";
-
-
+@import "partials/footer";
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -164,4 +157,7 @@ footer {
         }
 
     }
+
+    font-family: $font;
+
 }
