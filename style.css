@@ -203,6 +203,238 @@
   text-decoration: underline;
 }
 
+main {
+  width: auto;
+  height: 112rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+main .cards-content {
+  width: 98%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .cards-content .iphone-wrapper {
+  width: 49.5%;
+  height: 36rem;
+  background-image: url("index-images/IPhone_14_pro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .cards-content .iphone-wrapper .iphone-wrapper h4 {
+  color: #f5f5f7;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+main .cards-content .iphone-wrapper .iphone-wrapper h5 {
+  color: #f5f5f7;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .iphone-wrapper #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .ipad-wrapper {
+  background-color: #fbfbfb;
+  width: 49.5%;
+  height: 36rem;
+  background-image: url("/index-images/IPad.jpg");
+  background-position: bottom;
+  background-size: 100rem;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .ipad-wrapper h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+main .cards-content .ipad-wrapper .iphone-wrapper h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .ipad-wrapper #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .airpods-wrapper {
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("index-images/ski.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card {
+  width: auto;
+  height: 20rem;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card #apple-gift {
+  padding-top: 1rem;
+  margin-top: 40px;
+  width: 2rem;
+  height: 3.5rem;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card h4 {
+  margin-top: 2px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card .iphone-wrapper h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .blackwatch-wrapper {
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("index-images/apple_watch_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card {
+  width: auto;
+  height: 20rem;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card #apple-watch-series {
+  padding-top: 1rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  width: auto;
+  height: auto;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card h4 {
+  margin-top: 15px;
+  text-align: center;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card .iphone-wrapper h5 {
+  color: #f5f5f7;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .whitewatch-wrapper {
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("index-images/apple_watch_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card {
+  width: auto;
+  height: 20rem;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card #apple-watch-series {
+  padding-top: 1rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  width: auto;
+  height: auto;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card h4 {
+  margin-top: 15px;
+  text-align: center;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card .iphone-wrapper h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .speaker-wrapper {
+  background-color: #fbfbfb;
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("/index-images/speaker2.png");
+  background-position: bottom;
+  background-size: 60rem;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+main .cards-content .speaker-wrapper h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4rem;
+}
+main .cards-content .speaker-wrapper #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+
 footer {
   height: auto;
   width: auto;
