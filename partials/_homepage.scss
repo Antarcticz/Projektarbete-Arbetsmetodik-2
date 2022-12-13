@@ -1,4 +1,5 @@
 .section1 {
+    padding-top: 2rem;
     background-image: url("/index-images/iphone.jpg");
     height: 85vh;
     background-position: center;
@@ -18,10 +19,9 @@
         }
 
         .section-buttons-wrapper {
-            padding-top: 20px;
+            padding-top: 5px;
             display: flex;
             align-items: center;
-
             a {
                 text-decoration: none;
                 color: $link-color-light-bg;
@@ -45,7 +45,7 @@
 }
 
 .section2 {
-    background-image: url("/index-images/hero_startframe.jpg");
+    background-image: url("/index-images/apple_icon.jpg");
     margin-top: 15px;
     height: 85vh;
     background-position: center;
@@ -294,19 +294,23 @@
             margin-top: 1rem;
         }
 
-        .section-a-wrapper {
-            @include flex(row, space-between, center, nowrap);
-            width: 29%;
-            margin-top: 1rem;
-
+        .section-buttons-wrapper {
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
             a {
-                @include text-size(20px, 400, center);
-                color: $link-color-dark-bg;
                 text-decoration: none;
+                color: $link-color-dark-bg;
+                font-size: 20px;
+                font-weight: 300;
 
                 i {
-                    font-size: 0.8rem;
+                    font-size: 12px;
                 }
+            }
+
+            a:last-of-type {
+                padding-left: 30px;
             }
 
             a:hover {
@@ -328,14 +332,16 @@ main {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
+        i {
+            font-size: 10px;
+            padding-left: 3px
+        }
         .iphone-wrapper {
             @include size (49.5%, 36rem);
             @include background-image(url("index-images/IPhone_14_pro.jpg"));
             text-align: center;
             text-decoration: none;
             cursor: pointer;
-
             .iphone-wrapper h4 {
                 @include h4($nav-li-color);
             }

@@ -44,6 +44,7 @@
 }
 
 .section1 {
+  padding-top: 2rem;
   background-image: url("/index-images/iphone.jpg");
   height: 85vh;
   background-position: center;
@@ -69,7 +70,7 @@
   text-align: center;
 }
 .section1 .section-text-wrapper .section-buttons-wrapper {
-  padding-top: 20px;
+  padding-top: 5px;
   display: flex;
   align-items: center;
 }
@@ -90,7 +91,7 @@
 }
 
 .section2 {
-  background-image: url("/index-images/hero_startframe.jpg");
+  background-image: url("/index-images/apple_icon.jpg");
   margin-top: 15px;
   height: 85vh;
   background-position: center;
@@ -323,26 +324,24 @@
   text-align: center;
   margin-top: 1rem;
 }
-.section3 .section-text-wrapper .section-a-wrapper {
+.section3 .section-text-wrapper .section-buttons-wrapper {
+  padding-top: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
-  width: 29%;
-  margin-top: 1rem;
 }
-.section3 .section-text-wrapper .section-a-wrapper a {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-  color: #2997FF;
+.section3 .section-text-wrapper .section-buttons-wrapper a {
   text-decoration: none;
+  color: #2997FF;
+  font-size: 20px;
+  font-weight: 300;
 }
-.section3 .section-text-wrapper .section-a-wrapper a i {
-  font-size: 0.8rem;
+.section3 .section-text-wrapper .section-buttons-wrapper a i {
+  font-size: 12px;
 }
-.section3 .section-text-wrapper .section-a-wrapper a:hover {
+.section3 .section-text-wrapper .section-buttons-wrapper a:last-of-type {
+  padding-left: 30px;
+}
+.section3 .section-text-wrapper .section-buttons-wrapper a:hover {
   text-decoration: underline;
 }
 
@@ -359,6 +358,10 @@ main .cards-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+main .cards-content i {
+  font-size: 10px;
+  padding-left: 3px;
 }
 main .cards-content .iphone-wrapper {
   width: 49.5%;
