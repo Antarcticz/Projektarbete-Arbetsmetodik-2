@@ -67,3 +67,137 @@
         }
     }
 }
+
+.slide-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .image-slider {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.7s;
+    }
+    .slides-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0 10px;
+        position: relative;
+        .carousel-button-wrapper {
+            display: flex;
+            color: white;
+            position: absolute;
+            bottom: 3.5rem;
+            left: 4.5rem;
+            align-items: center;
+            font-family: $font;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.307);
+            .dramathick {
+                font-weight: 500;
+                font-size: 20px;
+            }
+            h4 {
+                font-weight: 300;
+                font-size: 19px;
+            }
+            .streamnow-btn {
+                padding: 13px 20px;
+                border-radius: 25px;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .3px;
+                align-items: center;
+                margin-right: 3rem;
+                i {
+                    padding-left: 3px;
+                }
+            }
+            
+            
+        }
+        
+    }
+    img {
+        position: relative;
+        transition: .5s;
+        width: 1200px;
+    }
+    .button {
+        position: absolute;
+        width: 1200px;
+        height: 100vh;
+    }
+
+    #slider-span1:target ~ .image-slider #img1,
+    #slider-span1:target ~.image-slider #button-1 {
+        width: 1200px;
+        height: 90vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+    #slider-span2:target ~ .image-slider #img2,
+    #slider-span2:target ~.image-slider #button-2 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+    #slider-span3:target ~ .image-slider #img3,
+    #slider-span3:target ~.image-slider #button-3 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+    #slider-span4:target ~ .image-slider #img4,
+    #slider-span4:target ~.image-slider #button-4 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+    #slider-span5:target ~ .image-slider #img5,
+    #slider-span5:target ~.image-slider #button-5 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+    #slider-span6:target ~ .image-slider #img6,
+    #slider-span6:target ~.image-slider #button-6 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+    #slider-span7:target ~ .image-slider #img7,
+    #slider-span7:target ~.image-slider #button-7 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+    
+
+    #slider-span1:target ~.image-slider {left: 255%;}
+    #slider-span2:target ~.image-slider {left: 170%;}
+    #slider-span3:target ~.image-slider {left: 85%;}
+    #slider-span4:target ~.image-slider {left: 0%;}
+    #slider-span5:target ~.image-slider {left: -85%;}
+    #slider-span6:target ~.image-slider {left: -170%;}
+    #slider-span7:target ~.image-slider {left: -255%;}
+    
+}
+.slides-div:nth-of-type(5) .carousel-button-wrapper .streamnow-btn {
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.09);
+}
+.slides-div:nth-of-type(5) .carousel-button-wrapper h4 {
+    text-shadow: 2px 2px 8px  black;
+}
