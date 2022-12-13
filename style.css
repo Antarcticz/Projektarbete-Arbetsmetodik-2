@@ -276,7 +276,6 @@
   text-shadow: 2px 2px 8px black;
 }
 
-
 .section3 {
   display: flex;
   flex-direction: column;
@@ -345,11 +344,6 @@
 }
 .section3 .section-text-wrapper .section-a-wrapper a:hover {
   text-decoration: underline;
-
-}
-
-body {
-  overflow-x: hidden;
 }
 
 main {
@@ -627,9 +621,6 @@ footer .navFooter .contentUpperFooter {
 }
 footer .navFooter .contentUpperFooter h3 {
   font-size: 0.8rem;
-  font-family: "Roboto";
-  font-size: 0.75rem;
-  font-family: "Roboto";
   font-weight: 500;
   color: #1D1D1F;
   opacity: 0.9;
@@ -647,7 +638,6 @@ footer .navFooter .contentUpperFooter li {
 footer .navFooter .contentUpperFooter a {
   text-decoration: none;
   color: #525255;
-  font-family: "Roboto";
   font-weight: 300;
   font-size: 0.8rem;
   font-size: 0.74rem;
@@ -668,14 +658,12 @@ footer .navFooterBottom .navFooterBottomTop {
 }
 footer .navFooterBottom .navFooterBottomTop p {
   font-size: 0.75rem;
-  font-family: "Roboto";
   text-align: start;
   color: #8e8e92;
 }
 footer .navFooterBottom .navFooterBottomTop a {
   text-decoration: none;
   font-size: 0.8rem;
-  font-family: "Roboto";
   color: #2174d0;
 }
 footer .navFooterBottom .verticalLine {
@@ -696,7 +684,6 @@ footer .navFooterBottom .navFooterBottomBottom {
 footer .navFooterBottom .navFooterBottomBottom .copyWriteLeftBar {
   width: 20rem;
   font-size: 0.8rem;
-  font-family: "Roboto";
   color: #545457;
   margin-top: 0.2rem;
   opacity: 0.7;
@@ -708,7 +695,6 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterBottomBottomLinks a {
   text-decoration: none;
   padding: 0px 5px;
   font-size: 0.8rem;
-  font-family: "Roboto";
   margin-bottom: 10px;
   color: #545457;
   border-left: 1px solid rgba(84, 84, 87, 0.1411764706);
@@ -720,7 +706,6 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterBottomBottomLinks a:fir
 footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
   text-decoration: none;
   font-size: 0.8rem;
-  font-family: "Roboto";
   color: #545457;
   margin-left: 5rem;
   opacity: 0.8;
@@ -731,4 +716,8 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
