@@ -133,6 +133,149 @@
   text-decoration: underline;
 }
 
+.slide-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.slide-container .image-slider {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+.slide-container .slides-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+  position: relative;
+}
+.slide-container .slides-div .carousel-button-wrapper {
+  display: flex;
+  color: white;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 4.5rem;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.307);
+}
+.slide-container .slides-div .carousel-button-wrapper .dramathick {
+  font-weight: 500;
+  font-size: 20px;
+}
+.slide-container .slides-div .carousel-button-wrapper h4 {
+  font-weight: 300;
+  font-size: 19px;
+}
+.slide-container .slides-div .carousel-button-wrapper .streamnow-btn {
+  padding: 13px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  align-items: center;
+  margin-right: 3rem;
+}
+.slide-container .slides-div .carousel-button-wrapper .streamnow-btn i {
+  padding-left: 3px;
+}
+.slide-container img {
+  position: relative;
+  transition: 0.5s;
+  width: 1200px;
+}
+.slide-container .button {
+  position: absolute;
+  width: 1200px;
+  height: 100vh;
+}
+.slide-container #slider-span1:target ~ .image-slider #img1,
+.slide-container #slider-span1:target ~ .image-slider #button-1 {
+  width: 1200px;
+  height: 90vh;
+  background-color: transparent;
+  filter: blur(1px);
+}
+.slide-container #slider-span2:target ~ .image-slider #img2,
+.slide-container #slider-span2:target ~ .image-slider #button-2 {
+  width: 1200px;
+  height: 100vh;
+  background-color: transparent;
+  filter: blur(1px);
+}
+.slide-container #slider-span3:target ~ .image-slider #img3,
+.slide-container #slider-span3:target ~ .image-slider #button-3 {
+  width: 1200px;
+  height: 100vh;
+  background-color: transparent;
+  filter: blur(1px);
+}
+.slide-container #slider-span4:target ~ .image-slider #img4,
+.slide-container #slider-span4:target ~ .image-slider #button-4 {
+  width: 1200px;
+  height: 100vh;
+  background-color: transparent;
+  filter: blur(1px);
+}
+.slide-container #slider-span5:target ~ .image-slider #img5,
+.slide-container #slider-span5:target ~ .image-slider #button-5 {
+  width: 1200px;
+  height: 100vh;
+  background-color: transparent;
+  filter: blur(1px);
+}
+.slide-container #slider-span6:target ~ .image-slider #img6,
+.slide-container #slider-span6:target ~ .image-slider #button-6 {
+  width: 1200px;
+  height: 100vh;
+  background-color: transparent;
+  filter: blur(1px);
+}
+.slide-container #slider-span7:target ~ .image-slider #img7,
+.slide-container #slider-span7:target ~ .image-slider #button-7 {
+  width: 1200px;
+  height: 100vh;
+  background-color: transparent;
+  filter: blur(1px);
+}
+.slide-container #slider-span1:target ~ .image-slider {
+  left: 255%;
+}
+.slide-container #slider-span2:target ~ .image-slider {
+  left: 170%;
+}
+.slide-container #slider-span3:target ~ .image-slider {
+  left: 85%;
+}
+.slide-container #slider-span4:target ~ .image-slider {
+  left: 0%;
+}
+.slide-container #slider-span5:target ~ .image-slider {
+  left: -85%;
+}
+.slide-container #slider-span6:target ~ .image-slider {
+  left: -170%;
+}
+.slide-container #slider-span7:target ~ .image-slider {
+  left: -255%;
+}
+
+.slides-div:nth-of-type(5) .carousel-button-wrapper .streamnow-btn {
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.09);
+}
+
+.slides-div:nth-of-type(5) .carousel-button-wrapper h4 {
+  text-shadow: 2px 2px 8px black;
+}
+
 .section3 {
   display: flex;
   flex-direction: column;
@@ -203,6 +346,256 @@
   text-decoration: underline;
 }
 
+main {
+  width: auto;
+  height: 112rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+main .cards-content {
+  width: 98%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .cards-content .iphone-wrapper {
+  width: 49.5%;
+  height: 36rem;
+  background-image: url("index-images/IPhone_14_pro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .cards-content .iphone-wrapper .iphone-wrapper h4 {
+  color: #f5f5f7;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+main .cards-content .iphone-wrapper .iphone-wrapper h5 {
+  color: #f5f5f7;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .iphone-wrapper #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .iphone-wrapper #lowerLink:hover {
+  text-decoration: underline;
+}
+main .cards-content .ipad-wrapper {
+  background-color: #fbfbfb;
+  width: 49.5%;
+  height: 36rem;
+  background-image: url("/index-images/IPad.jpg");
+  background-position: bottom;
+  background-size: 100rem;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .ipad-wrapper h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+main .cards-content .ipad-wrapper .iphone-wrapper h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .ipad-wrapper #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .ipad-wrapper #lowerLink:hover {
+  text-decoration: underline;
+}
+main .cards-content .airpods-wrapper {
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("index-images/ski.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card {
+  width: auto;
+  height: 20rem;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card #apple-gift {
+  padding-top: 1rem;
+  margin-top: 40px;
+  width: 2rem;
+  height: 3.5rem;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card h4 {
+  margin-top: 2px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card .iphone-wrapper h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .airpods-wrapper .airpods-logo-card #lowerLink:hover {
+  text-decoration: underline;
+}
+main .cards-content .blackwatch-wrapper {
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("index-images/apple_watch_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card {
+  width: auto;
+  height: 20rem;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card #apple-watch-series {
+  padding-top: 1rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  width: auto;
+  height: auto;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card h4 {
+  margin-top: 15px;
+  text-align: center;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card .iphone-wrapper h5 {
+  color: #f5f5f7;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .blackwatch-wrapper .airpods-logo-card #lowerLink:hover {
+  text-decoration: underline;
+}
+main .cards-content .whitewatch-wrapper {
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("index-images/apple_watch_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card {
+  width: auto;
+  height: 20rem;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card #apple-watch-series {
+  padding-top: 1rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  width: auto;
+  height: auto;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card h4 {
+  margin-top: 15px;
+  text-align: center;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card .iphone-wrapper h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .whitewatch-wrapper .airpods-logo-card #lowerLink:hover {
+  text-decoration: underline;
+}
+main .cards-content .speaker-wrapper {
+  background-color: #fbfbfb;
+  width: 49.5%;
+  height: 36.65rem;
+  background-image: url("/index-images/speaker2.png");
+  background-position: bottom;
+  background-size: 60rem;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+main .cards-content .speaker-wrapper h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4rem;
+}
+main .cards-content .speaker-wrapper #lowerLink {
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
+  margin: 10px;
+  color: #217bcf;
+  text-decoration: none;
+}
+main .cards-content .speaker-wrapper #lowerLink:hover {
+  text-decoration: underline;
+}
+
 footer {
   height: auto;
   width: auto;
@@ -228,9 +621,6 @@ footer .navFooter .contentUpperFooter {
 }
 footer .navFooter .contentUpperFooter h3 {
   font-size: 0.8rem;
-  font-family: "Roboto";
-  font-size: 0.75rem;
-  font-family: "Roboto";
   font-weight: 500;
   color: #1D1D1F;
   opacity: 0.9;
@@ -248,7 +638,6 @@ footer .navFooter .contentUpperFooter li {
 footer .navFooter .contentUpperFooter a {
   text-decoration: none;
   color: #525255;
-  font-family: "Roboto";
   font-weight: 300;
   font-size: 0.8rem;
   font-size: 0.74rem;
@@ -269,14 +658,12 @@ footer .navFooterBottom .navFooterBottomTop {
 }
 footer .navFooterBottom .navFooterBottomTop p {
   font-size: 0.75rem;
-  font-family: "Roboto";
   text-align: start;
   color: #8e8e92;
 }
 footer .navFooterBottom .navFooterBottomTop a {
   text-decoration: none;
   font-size: 0.8rem;
-  font-family: "Roboto";
   color: #2174d0;
 }
 footer .navFooterBottom .verticalLine {
@@ -297,7 +684,6 @@ footer .navFooterBottom .navFooterBottomBottom {
 footer .navFooterBottom .navFooterBottomBottom .copyWriteLeftBar {
   width: 20rem;
   font-size: 0.8rem;
-  font-family: "Roboto";
   color: #545457;
   margin-top: 0.2rem;
   opacity: 0.7;
@@ -309,7 +695,6 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterBottomBottomLinks a {
   text-decoration: none;
   padding: 0px 5px;
   font-size: 0.8rem;
-  font-family: "Roboto";
   margin-bottom: 10px;
   color: #545457;
   border-left: 1px solid rgba(84, 84, 87, 0.1411764706);
@@ -321,7 +706,6 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterBottomBottomLinks a:fir
 footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
   text-decoration: none;
   font-size: 0.8rem;
-  font-family: "Roboto";
   color: #545457;
   margin-left: 5rem;
   opacity: 0.8;
@@ -332,4 +716,8 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */

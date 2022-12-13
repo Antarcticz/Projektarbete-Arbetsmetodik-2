@@ -4,31 +4,39 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
     .section-text-wrapper {
         height: 40%;
-        @include flex (column, center, center,);
+        @include flex (column, center, center, );
+
         h2 {
             @include text-size (55px, 500, center);
         }
+
         h3 {
             @include text-size (27px, 300, center);
         }
+
         .section-buttons-wrapper {
             padding-top: 20px;
             display: flex;
             align-items: center;
+
             a {
                 text-decoration: none;
                 color: $link-color-light-bg;
                 font-size: 20px;
                 font-weight: 300;
+
                 i {
                     font-size: 12px;
                 }
             }
-            a:last-of-type  {
+
+            a:last-of-type {
                 padding-left: 30px;
             }
+
             a:hover {
                 text-decoration: underline;
             }
@@ -46,17 +54,20 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
     .section-text-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         height: 40%;
+
         h2 {
             color: white;
             font-size: 55px;
             font-weight: 500;
         }
+
         h3 {
             color: white;
             font-size: 27px;
@@ -65,6 +76,7 @@
             text-align: center;
             font-weight: 300;
         }
+
         a {
             color: $link-color-dark-bg;
             padding-top: 20px;
@@ -74,18 +86,191 @@
             i {
                 font-size: 12px;
             }
-            
+
         }
+
         a:hover {
             text-decoration: underline;
         }
     }
 }
 
+
+.slide-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .image-slider {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.7s;
+    }
+
+    .slides-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0 10px;
+        position: relative;
+
+        .carousel-button-wrapper {
+            display: flex;
+            color: white;
+            position: absolute;
+            bottom: 3.5rem;
+            left: 4.5rem;
+            align-items: center;
+            font-family: $font;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.307);
+
+            .dramathick {
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            h4 {
+                font-weight: 300;
+                font-size: 19px;
+            }
+
+            .streamnow-btn {
+                padding: 13px 20px;
+                border-radius: 25px;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .3px;
+                align-items: center;
+                margin-right: 3rem;
+
+                i {
+                    padding-left: 3px;
+                }
+            }
+
+
+        }
+
+    }
+
+    img {
+        position: relative;
+        transition: .5s;
+        width: 1200px;
+    }
+
+    .button {
+        position: absolute;
+        width: 1200px;
+        height: 100vh;
+    }
+
+    #slider-span1:target~.image-slider #img1,
+    #slider-span1:target~.image-slider #button-1 {
+        width: 1200px;
+        height: 90vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+
+    #slider-span2:target~.image-slider #img2,
+    #slider-span2:target~.image-slider #button-2 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+
+    #slider-span3:target~.image-slider #img3,
+    #slider-span3:target~.image-slider #button-3 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+
+    #slider-span4:target~.image-slider #img4,
+    #slider-span4:target~.image-slider #button-4 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+
+    #slider-span5:target~.image-slider #img5,
+    #slider-span5:target~.image-slider #button-5 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+
+    #slider-span6:target~.image-slider #img6,
+    #slider-span6:target~.image-slider #button-6 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+
+    #slider-span7:target~.image-slider #img7,
+    #slider-span7:target~.image-slider #button-7 {
+        width: 1200px;
+        height: 100vh;
+        background-color: transparent;
+        filter: blur(1px);
+    }
+
+
+    #slider-span1:target~.image-slider {
+        left: 255%;
+    }
+
+    #slider-span2:target~.image-slider {
+        left: 170%;
+    }
+
+    #slider-span3:target~.image-slider {
+        left: 85%;
+    }
+
+    #slider-span4:target~.image-slider {
+        left: 0%;
+    }
+
+    #slider-span5:target~.image-slider {
+        left: -85%;
+    }
+
+    #slider-span6:target~.image-slider {
+        left: -170%;
+    }
+
+    #slider-span7:target~.image-slider {
+        left: -255%;
+    }
+
+}
+
+.slides-div:nth-of-type(5) .carousel-button-wrapper .streamnow-btn {
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.09);
+}
+
+.slides-div:nth-of-type(5) .carousel-button-wrapper h4 {
+    text-shadow: 2px 2px 8px black;
+}
+
 .section3 {
     @include flex(column, center, center, nowrap);
     @include background-image(url("index-images/hero_dvs.jpg"));
-    @include size(100%, 85vh);     
+    @include size(100%, 85vh);
     margin-top: 1rem;
 
     .section-text-wrapper {
@@ -98,19 +283,22 @@
             @include background-image(url("index-images/card_logo.png"));
             @include size(23%, 8vh);
         }
+
         h3 {
             @include text-size(1.7rem, 400, center);
             width: 50%;
         }
+
         h6 {
             @include text-size(1.3rem, 400, center);
             margin-top: 1rem;
         }
+
         .section-a-wrapper {
             @include flex(row, space-between, center, nowrap);
             width: 29%;
             margin-top: 1rem;
-            
+
             a {
                 @include text-size(20px, 400, center);
                 color: $link-color-dark-bg;
@@ -120,8 +308,188 @@
                     font-size: 0.8rem;
                 }
             }
+
             a:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+main {
+    @include size (auto, 112rem);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    .cards-content {
+        @include size (98%, auto);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .iphone-wrapper {
+            @include size (49.5%, 36rem);
+            @include background-image(url("index-images/IPhone_14_pro.jpg"));
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+
+            .iphone-wrapper h4 {
+                @include h4($nav-li-color);
+            }
+
+            .iphone-wrapper h5 {
+                @include h5 ($nav-li-color);
+            }
+
+            #lowerLink {
+                @include lowerLinks(1.1rem);
+            }
+        }
+
+        .ipad-wrapper {
+            background-color: #fbfbfb;
+            @include size (49.5%, 36rem);
+            background-image: url("/index-images/IPad.jpg");
+            background-position: bottom;
+            background-size: 100rem;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+
+            h4 {
+                color: $nav-background-color;
+                @include text-size(2.5rem, 500, center);
+                text-decoration: none;
+            }
+
+            .iphone-wrapper h5 {
+                @include h5 ($nav-background-color);
+            }
+
+            #lowerLink {
+                @include lowerLinks(1.1rem);
+            }
+        }
+
+        .airpods-wrapper {
+            @include size (49.5%, 36.65rem);
+            @include background-image(url("index-images/ski.jpg"));
+            text-align: center;
+            cursor: pointer;
+
+
+            .airpods-logo-card {
+                @include size (auto, 20rem);
+
+                #apple-gift {
+                    padding-top: 1rem;
+                    margin-top: 40px;
+                    @include size(2rem, 3.5rem);
+                }
+
+                h4 {
+                    margin-top: 2px;
+                    color: $nav-background-color;
+                    @include text-size(2.5rem, 500, center);
+                    text-decoration: none;
+                }
+
+                .iphone-wrapper h5 {
+                    @include h5 ($nav-background-color);
+                }
+
+                #lowerLink {
+                    @include lowerLinks(1.1rem);
+                }
+            }
+        }
+
+        .blackwatch-wrapper {
+            @include size (49.5%, 36.65rem);
+            @include background-image(url("index-images/apple_watch_1.jpg"));
+            text-align: center;
+            cursor: pointer;
+
+            .airpods-logo-card {
+                @include size (auto, 20rem);
+
+                #apple-watch-series {
+                    padding-top: 1rem;
+                    margin-top: 40px;
+                    margin-bottom: 12px;
+                    @include size (auto, auto);
+                }
+
+                h4 {
+                    margin-top: 15px;
+                    text-align: center;
+                }
+
+                .iphone-wrapper h5 {
+                    @include h5 ($nav-li-color);
+                }
+
+                #lowerLink {
+                    @include lowerLinks(1.1rem);
+                }
+            }
+
+
+        }
+
+        .whitewatch-wrapper {
+            @include size (49.5%, 36.65rem);
+            @include background-image(url("index-images/apple_watch_2.jpg"));
+            text-align: center;
+            cursor: pointer;
+
+            .airpods-logo-card {
+                @include size (auto, 20rem);
+
+                #apple-watch-series {
+                    padding-top: 1rem;
+                    margin-top: 40px;
+                    margin-bottom: 12px;
+                    @include size (auto, auto);
+                }
+
+                h4 {
+                    margin-top: 15px;
+                    text-align: center;
+                }
+
+                .iphone-wrapper h5 {
+                    @include h5 ($nav-background-color);
+                }
+
+                #lowerLink {
+                    @include lowerLinks(1.1rem);
+                }
+            }
+        }
+
+        .speaker-wrapper {
+            background-color: #fbfbfb;
+            @include size (49.5%, 36.65rem);
+            background-image: url("/index-images/speaker2.png");
+            background-position: bottom;
+            background-size: 60rem;
+            background-repeat: no-repeat;
+            text-align: center;
+
+            h4 {
+                color: $nav-background-color;
+                @include text-size(2.5rem, 500, center);
+                text-decoration: none;
+                margin-top: 4rem;
+            }
+
+            #lowerLink {
+                @include lowerLinks(1.1rem);
             }
         }
     }
