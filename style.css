@@ -599,6 +599,82 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   text-decoration: underline;
 }
 
+.store-section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #f5f5f7;
+}
+.store-section-2 .store-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-right: 20%;
+}
+.store-section-2 .store-header-wrapper .header-h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+  color: #1D1D1F;
+}
+.store-section-2 .store-header-wrapper .header-span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+  color: #6E6E73;
+}
+.store-section-2 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.store-section-2 .card {
+  margin: 1rem;
+}
+.store-section-2 .card-text-white-color h3 {
+  color: #F5F5F7;
+}
+.store-section-2 .card-text-white-color p, .store-section-2 .card-text-white-color span {
+  color: #fff;
+}
+.store-section-2 h3 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #6E6E73;
+}
+.store-section-2 p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #1D1D1F;
+}
+.store-section-2 span {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  color: #1D1D1F;
+}
+.store-section-2 .image {
+  width: 399.98px;
+  height: 499.98px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.swiper {
+  width: 950px;
+}
+
 footer {
   height: auto;
   width: auto;
