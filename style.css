@@ -663,16 +663,115 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   text-align: left;
   color: #1D1D1F;
 }
-.store-section-2 .image {
+.store-section-2 .image1 {
   width: 399.98px;
   height: 499.98px;
+  background-image: url("/store-images/store-card-40-iphone-14-202209_GEO_US.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid black;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
-
-.swiper {
-  width: 950px;
+.store-section-2 .image2 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-watch-s8-202209.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image3 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-ipad-202210.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image4 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-iphone-14-pro-202209.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image5 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-watch-ultra-202209.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image6 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-ipad-pro-202210.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image7 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-appletv-202210.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image8 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-watch-se-202209.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image9 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-macbook-air-202206.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.store-section-2 .image10 {
+  width: 399.98px;
+  height: 499.98px;
+  background-image: url("/store-images/store-card-40-airpods-pro-202209.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
 }
 
 footer {
