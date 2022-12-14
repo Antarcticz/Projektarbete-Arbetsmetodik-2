@@ -22,6 +22,7 @@
             padding-top: 5px;
             display: flex;
             align-items: center;
+
             a {
                 text-decoration: none;
                 color: $link-color-light-bg;
@@ -298,6 +299,7 @@
             padding-top: 20px;
             display: flex;
             align-items: center;
+
             a {
                 text-decoration: none;
                 color: $link-color-dark-bg;
@@ -322,26 +324,30 @@
 }
 
 main {
-    @include size (auto, 112rem);
+    @include size (98%, auto);
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 
     .cards-content {
         @include size (98%, auto);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: auto;
+
         i {
             font-size: 10px;
             padding-left: 3px
         }
+
         .iphone-wrapper {
-            @include size (49.5%, 36rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/IPhone_14_pro.jpg"));
             text-align: center;
             text-decoration: none;
             cursor: pointer;
+            margin-bottom: 10px;
+
             .iphone-wrapper h4 {
                 @include h4($nav-li-color);
             }
@@ -357,7 +363,7 @@ main {
 
         .ipad-wrapper {
             background-color: #fbfbfb;
-            @include size (49.5%, 36rem);
+            @include size (49.7%, 32rem);
             background-image: url("/index-images/IPad.jpg");
             background-position: bottom;
             background-size: 100rem;
@@ -365,6 +371,7 @@ main {
             text-decoration: none;
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
             h4 {
                 color: $nav-background-color;
@@ -382,10 +389,11 @@ main {
         }
 
         .airpods-wrapper {
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/ski.jpg"));
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
 
             .airpods-logo-card {
@@ -415,10 +423,11 @@ main {
         }
 
         .blackwatch-wrapper {
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/apple_watch_1.jpg"));
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
             .airpods-logo-card {
                 @include size (auto, 20rem);
@@ -448,10 +457,11 @@ main {
         }
 
         .whitewatch-wrapper {
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/apple_watch_2.jpg"));
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
             .airpods-logo-card {
                 @include size (auto, 20rem);
@@ -480,12 +490,13 @@ main {
 
         .speaker-wrapper {
             background-color: #fbfbfb;
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             background-image: url("/index-images/speaker2.png");
             background-position: bottom;
             background-size: 60rem;
             background-repeat: no-repeat;
             text-align: center;
+            margin-bottom: 10px;
 
             h4 {
                 color: $nav-background-color;
