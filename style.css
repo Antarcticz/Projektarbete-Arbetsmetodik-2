@@ -553,6 +553,9 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   background-color: #f5f5f7;
   line-height: 15px;
 }
+.footnote-1 .cross {
+  font-size: 8px;
+}
 .footnote-1 span {
   font-size: 12px;
 }
@@ -573,6 +576,31 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   font-weight: 500;
   font-size: 12px;
   color: #7e7d7d;
+}
+
+.footer-apple-logo {
+  width: 100%;
+  background-color: #f5f5f7;
+}
+.footer-apple-logo .footer-apple-logo-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.footer-apple-logo .footer-apple-logo-wrapper .fa-apple {
+  color: rgba(0, 0, 0, 0.695);
+}
+.footer-apple-logo .footer-apple-logo-wrapper .fa-chevron-right {
+  color: rgba(0, 0, 0, 0.107);
+  padding: 0px 10px;
+}
+.footer-apple-logo .footer-apple-logo-wrapper p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #525255;
 }
 
 footer {
