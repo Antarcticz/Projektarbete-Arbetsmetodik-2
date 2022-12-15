@@ -547,32 +547,95 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   text-decoration: underline;
 }
 
-.footnote-1 {
+.store-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-right: 30%;
+  margin-bottom: 1rem;
+}
+.store-header-wrapper .header-h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+  color: #1D1D1F;
+}
+.store-header-wrapper .header-span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+  color: #6E6E73;
+}
+
+.store-section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
-  padding-top: 20px;
   background-color: #f5f5f7;
-  line-height: 15px;
 }
-.footnote-1 span {
-  font-size: 12px;
+.store-section-2 .container {
+  width: 100%;
 }
-.footnote-1 p {
-  width: 80%;
-  margin: auto;
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  color: #848484;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgb(204, 204, 204);
+.store-section-2 .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-.footnote-1 .strong {
-  color: rgba(0, 0, 0, 0.668);
+.store-section-2 .image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 399.98px;
+  height: 499.98px;
+  padding: 0.1rem;
 }
-.footnote-1 .bold {
+.store-section-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.store-section-2 .card-text {
+  position: relative;
+  bottom: 28.5rem;
+  left: 3rem;
+}
+.store-section-2 .card-text-white-color h3 {
+  color: #F5F5F7;
+}
+.store-section-2 .card-text-white-color p, .store-section-2 .card-text-white-color span {
+  color: #fff;
+}
+.store-section-2 h3 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #6E6E73;
+}
+.store-section-2 p {
+  font-size: 1.7rem;
   font-weight: 500;
-  font-size: 12px;
-  color: #7e7d7d;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #1D1D1F;
+}
+.store-section-2 span {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  color: #1D1D1F;
 }
 
 footer {
