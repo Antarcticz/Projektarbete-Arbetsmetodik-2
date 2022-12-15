@@ -579,6 +579,16 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 }
 .store-section-2 .container {
   width: 100%;
+  height: 58vh;
+}
+.store-section-2 .swiper-slide {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+}
+.store-section-2 .card-content {
+  width: 400px;
+  height: 500px;
 }
 .store-section-2 .card {
   display: flex;
@@ -586,7 +596,6 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 1rem;
 }
 @media screen and (max-width: 1820px) {
   .store-section-2 .card {
@@ -594,11 +603,12 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   }
 }
 .store-section-2 .image {
-  width: 399.98px;
-  height: 499.98px;
+  width: 399.99px;
+  height: 499.99px;
   transition-duration: 0.5s;
   border-radius: 1rem;
   box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
+  cursor: pointer;
 }
 .store-section-2 .image:hover {
   width: 403px;

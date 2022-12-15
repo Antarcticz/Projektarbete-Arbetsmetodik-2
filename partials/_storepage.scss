@@ -18,12 +18,18 @@
     width: 100%;
     
     .container {
-        width: 100%;
+        @include size(100%, 58vh);
+        
     }
-    
+    .swiper-slide {
+        @include size(400px, 500px);
+        margin: auto;
+    }
+    .card-content {
+        @include size(400px, 500px);
+    }
     .card {
         @include flex(row, center, center, nowrap);
-        margin-top: 1rem;
 
         @media screen and (max-width: 1820px) {
             margin-left: 1rem;
@@ -31,10 +37,11 @@
     }
     
     .image {
-        @include size(399.98px, 499.98px);
+        @include size(399.99px, 499.99px);
         transition-duration: 0.5s;
         border-radius: 1rem;
         box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
+        cursor: pointer;
         
     }
     .image:hover {
