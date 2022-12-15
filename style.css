@@ -691,7 +691,6 @@ footer .navFooterBottom .navFooterBottomBottom {
   align-items: center;
   flex-wrap: nowrap;
   margin-right: 30%;
-  margin-bottom: 1rem;
 }
 .store-header-wrapper .header-h3 {
   font-size: 1.6rem;
@@ -720,20 +719,23 @@ footer .navFooterBottom .navFooterBottomBottom {
 }
 .store-section-2 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  margin-top: 1rem;
 }
 .store-section-2 .image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
   width: 399.98px;
   height: 499.98px;
-  padding: 0.1rem;
+  transition-duration: 0.5s;
+  border-radius: 1rem;
+}
+.store-section-2 .image:hover {
+  width: 403px;
+  height: 503px;
+  transition-duration: 0.5s;
+  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
 }
 .store-section-2 img {
   width: 100%;
@@ -741,12 +743,11 @@ footer .navFooterBottom .navFooterBottomBottom {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
-  border: 1px solid black;
 }
 .store-section-2 .card-text {
   position: relative;
-  bottom: 28.5rem;
-  left: 3rem;
+  bottom: 29.5rem;
+  left: 1.5rem;
 }
 .store-section-2 .card-text-white-color h3 {
   color: #F5F5F7;
