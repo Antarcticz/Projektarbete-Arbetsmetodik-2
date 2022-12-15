@@ -627,24 +627,29 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: #f5f5f7;
 }
 .store-section-2 .container {
   width: 100%;
 }
 .store-section-2 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   margin-top: 1rem;
+}
+@media screen and (max-width: 1820px) {
+  .store-section-2 .card {
+    margin-left: 1rem;
+  }
 }
 .store-section-2 .image {
   width: 399.98px;
   height: 499.98px;
   transition-duration: 0.5s;
   border-radius: 1rem;
+  box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
 }
 .store-section-2 .image:hover {
   width: 403px;
@@ -815,4 +820,5 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
 
 body {
   overflow-x: hidden;
+  background-color: #f5f5f7;
 }/*# sourceMappingURL=style.css.map */
