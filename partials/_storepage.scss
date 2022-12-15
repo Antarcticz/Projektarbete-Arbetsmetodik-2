@@ -17,9 +17,12 @@
     @include flex(row, center, center, nowrap);
     width: 100%;
     background-color: #f5f5f7;
+    
+    
 
     .container {
         width: 100%;
+        
         
     }
 
@@ -31,7 +34,6 @@
     .image {
         @include flex(row, center, center, nowrap);
         @include size(399.98px, 499.98px);
-        padding: 0.1rem;
         
     }
 
@@ -40,11 +42,12 @@
         object-fit: cover;
         border-radius: 1rem;
         border: 1px solid black;
+        
     }
     .card-text {
         position: relative;
-        bottom: 28.5rem;
-        left: 3rem;
+        bottom: 29.5rem;
+        left: 1.5rem;
     }
     .card-text-white-color {
         h3 {

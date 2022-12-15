@@ -648,7 +648,6 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-wrap: nowrap;
   width: 399.98px;
   height: 499.98px;
-  padding: 0.1rem;
 }
 .store-section-2 img {
   width: 100%;
@@ -660,8 +659,8 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 }
 .store-section-2 .card-text {
   position: relative;
-  bottom: 28.5rem;
-  left: 3rem;
+  bottom: 29.5rem;
+  left: 1.5rem;
 }
 .store-section-2 .card-text-white-color h3 {
   color: #F5F5F7;
