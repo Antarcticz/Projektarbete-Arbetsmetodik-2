@@ -1,7 +1,6 @@
 .store-header-wrapper{
     @include flex(row, center, center, nowrap);
     margin-right: 30%;
-    margin-bottom: 1rem;
     
     .header-h3 {
         @include text-size(1.6rem, 600, left);
@@ -22,28 +21,37 @@
 
     .container {
         width: 100%;
-        
-        
     }
 
     .card {
-        @include flex(row, center, center, nowrap);
+        @include flex(column, center, center, nowrap);
+        margin-top: 1rem;
+    }
+    
+    .image {
+        @include size(399.98px, 499.98px);
+        transition-duration: 0.5s;
+        border-radius: 1rem;
         
     }
+    .image:hover {
+        @include size(403px, 503px);
+        transition-duration: 0.5s;
+        box-shadow: -1px 1px 10px 2px #00000030;
 
-    .image {
-        @include flex(row, center, center, nowrap);
-        @include size(399.98px, 499.98px);
-        
     }
 
     img {
         @include size(100%, 100%);
         object-fit: cover;
         border-radius: 1rem;
-        border: 1px solid black;
         
     }
+    // img:hover {
+    //     @include size(403px, 503px);
+    //     transition-duration: 0.5s;
+    //     box-shadow: 2px 2px 4px #00000040;
+    // }
     .card-text {
         position: relative;
         bottom: 29.5rem;
