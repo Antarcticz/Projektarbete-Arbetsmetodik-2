@@ -6,3 +6,112 @@ main {
 
 
 }
+
+.support-footer{
+  display: flex;
+  flex-direction: column;
+  .support-footer-social {
+    margin: auto;
+    width: 70%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+    h5 {
+      font-weight: 300;
+      padding-bottom: 20px;
+    }
+    .support-footer-social-icons {
+      i {
+        font-size: 35px;
+        color: rgba(0, 0, 0, 0.771);
+        cursor: pointer;
+      }
+      i:nth-of-type(2) {
+        padding-left: 10px;
+      }
+    }
+  }
+  .footer-apple-logo {
+    
+    .footer-apple-logo-wrapper {
+      width: 70%;
+      p {
+        letter-spacing: 0.2px;
+        color: rgba(0, 0, 0, 0.454);
+      }
+    }
+  }
+  .support-footer-uls {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+    padding-bottom: 30px;
+    
+    ul {
+      list-style: none;
+      h5 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #161617;
+        opacity: 0.9;
+        color: $footer-header-link-color;
+        margin-top: 15px;
+      }
+      li {
+        padding-top: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #525255;
+        font-weight: 300;
+        font-size: 0.8rem;
+        font-size: 0.74rem;
+      }
+    }
+  }
+  .footer-copy-wrapper {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    h5 {
+      color: rgba(0, 0, 0, 0.565);
+      font-weight: 400;
+      font-size: 12px;
+    }
+    .footer-copy-left {
+      display: flex;
+      ul {
+        display: flex;
+        list-style: none;
+        a {
+          text-decoration: none;
+          font-size: 12px;
+          padding: 0px 15px;
+          color: rgba(0, 0, 0, 0.454);
+          letter-spacing: 0.3px;
+          border-left: 1px solid rgba(0, 0, 0, 0.148);
+        }
+        a:first-of-type {
+          border: none;
+        }
+        
+      }
+        h5 {
+          margin-right: 20px;
+          color: rgba(0, 0, 0, 0.378);
+        }
+      
+      }
+    }
+  }
+
+
