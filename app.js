@@ -8,11 +8,11 @@ window.addEventListener("hashchange", () => {
 });
 
 
-        
+// Swiper JS    
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  slidesPerGroup: 3,
+  slidesPerView: 4.5,
+  spaceBetween: 1,
+  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
