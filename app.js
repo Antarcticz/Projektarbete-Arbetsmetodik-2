@@ -11,16 +11,6 @@ slide.forEach((s, i) => {
     })
 })
 
-window.addEventListener("hashchange", () => {
-  if (
-    window.location.hash &&
-    window.location.hash.startsWith("#slider-span")
-  ) {
-    document.getElementById("carousel").scrollIntoView();
-  }
-});
-
-
 // Swiper JS    
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 4.5,
