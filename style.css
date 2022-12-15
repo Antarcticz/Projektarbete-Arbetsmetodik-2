@@ -10,6 +10,7 @@
   width: 100%;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
+  z-index: 100;
 }
 .top-navigation .fa-apple {
   color: #f5f5f7;
@@ -134,147 +135,88 @@
   text-decoration: underline;
 }
 
-.slide-container {
+.slider-container {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-.slide-container .image-slider {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  left: 0;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.7s;
+  margin-bottom: 1rem;
 }
-.slide-container .slides-div {
+.slider-container .slider-pannel {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 10px 0 10px;
+}
+.slider-container .slide {
   position: relative;
+  overflow: hidden;
+  min-width: 1000px;
+  height: 100%;
+  margin: 0 5px;
+  border: 1px solid rgba(179, 179, 179, 0.671);
+  box-shadow: 10px 30px 50px 0 rgba(179, 179, 179, 0.671);
+  transform: translate(-70%);
+  transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+  opacity: 0.5;
 }
-.slide-container .slides-div .carousel-button-wrapper {
-  display: flex;
-  color: white;
+.slider-container .inner {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   position: absolute;
-  bottom: 3.5rem;
-  left: 4.5rem;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.307);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.8s ease-in-out;
+  display: flex;
+  align-items: flex-end;
 }
-.slide-container .slides-div .carousel-button-wrapper .dramathick {
+.slider-container .inner .inner-button-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3rem 5rem;
+}
+.slider-container .inner .inner-button-text h4 {
+  color: white;
+  font-weight: 300;
+  padding-left: 2.5rem;
+  font-size: 19px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.446);
+}
+.slider-container .inner .inner-button-text h4 span {
   font-weight: 500;
   font-size: 20px;
 }
-.slide-container .slides-div .carousel-button-wrapper h4 {
-  font-weight: 300;
-  font-size: 19px;
-}
-.slide-container .slides-div .carousel-button-wrapper .streamnow-btn {
-  padding: 13px 20px;
-  border-radius: 25px;
-  border: none;
-  font-weight: 600;
+.slider-container .inner .inner-button-text .watchnow-btn {
+  padding: 13px 25px;
+  border-radius: 28px;
+  font-weight: 500;
   letter-spacing: 0.3px;
-  align-items: center;
-  margin-right: 3rem;
+  border: none;
+  cursor: pointer;
 }
-.slide-container .slides-div .carousel-button-wrapper .streamnow-btn i {
-  padding-left: 3px;
+.slider-container .inner .inner-button-text .watchnow-btn i {
+  margin-left: 2px;
 }
-.slide-container img {
-  position: relative;
-  transition: 0.5s;
-  width: 1200px;
+.slider-container .active {
+  opacity: 1;
+  box-shadow: rgb(179, 179, 179);
+  z-index: 3;
 }
-.slide-container .button {
-  position: absolute;
-  width: 1200px;
-  height: 100vh;
+.slider-container .slide1 .inner {
+  background-image: url("/index-images/Emancipation.jpeg");
 }
-.slide-container #slider-span1:target ~ .image-slider #img1,
-.slide-container #slider-span1:target ~ .image-slider #button-1 {
-  width: 1200px;
-  height: 90vh;
-  background-color: transparent;
-  filter: blur(1px);
+.slider-container .slide2 .inner {
+  background-image: url("/index-images/see.jpeg");
 }
-.slide-container #slider-span2:target ~ .image-slider #img2,
-.slide-container #slider-span2:target ~ .image-slider #button-2 {
-  width: 1200px;
-  height: 100vh;
-  background-color: transparent;
-  filter: blur(1px);
-}
-.slide-container #slider-span3:target ~ .image-slider #img3,
-.slide-container #slider-span3:target ~ .image-slider #button-3 {
-  width: 1200px;
-  height: 100vh;
-  background-color: transparent;
-  filter: blur(1px);
-}
-.slide-container #slider-span4:target ~ .image-slider #img4,
-.slide-container #slider-span4:target ~ .image-slider #button-4 {
-  width: 1200px;
-  height: 100vh;
-  background-color: transparent;
-  filter: blur(1px);
-}
-.slide-container #slider-span5:target ~ .image-slider #img5,
-.slide-container #slider-span5:target ~ .image-slider #button-5 {
-  width: 1200px;
-  height: 100vh;
-  background-color: transparent;
-  filter: blur(1px);
-}
-.slide-container #slider-span6:target ~ .image-slider #img6,
-.slide-container #slider-span6:target ~ .image-slider #button-6 {
-  width: 1200px;
-  height: 100vh;
-  background-color: transparent;
-  filter: blur(1px);
-}
-.slide-container #slider-span7:target ~ .image-slider #img7,
-.slide-container #slider-span7:target ~ .image-slider #button-7 {
-  width: 1200px;
-  height: 100vh;
-  background-color: transparent;
-  filter: blur(1px);
-}
-.slide-container #slider-span1:target ~ .image-slider {
-  left: 255%;
-}
-.slide-container #slider-span2:target ~ .image-slider {
-  left: 170%;
-}
-.slide-container #slider-span3:target ~ .image-slider {
-  left: 85%;
-}
-.slide-container #slider-span4:target ~ .image-slider {
-  left: 0%;
-}
-.slide-container #slider-span5:target ~ .image-slider {
-  left: -85%;
-}
-.slide-container #slider-span6:target ~ .image-slider {
-  left: -170%;
-}
-.slide-container #slider-span7:target ~ .image-slider {
-  left: -255%;
-}
-
-.slides-div:nth-of-type(5) .carousel-button-wrapper .streamnow-btn {
-  background-color: white;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.09);
-}
-
-.slides-div:nth-of-type(5) .carousel-button-wrapper h4 {
-  text-shadow: 2px 2px 8px black;
+.slider-container .slide3 .inner {
+  background-image: url("/index-images/shantaram.jpeg");
 }
 
 .section3 {
@@ -346,11 +288,10 @@
 }
 
 main {
-  width: auto;
-  height: 112rem;
+  width: 98%;
+  height: auto;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
 }
 main .cards-content {
   width: 98%;
@@ -358,14 +299,15 @@ main .cards-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 main .cards-content i {
   font-size: 10px;
   padding-left: 3px;
 }
 main .cards-content .iphone-wrapper {
-  width: 49.5%;
-  height: 36rem;
+  width: 49.7%;
+  height: 32rem;
   background-image: url("index-images/IPhone_14_pro.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -373,6 +315,7 @@ main .cards-content .iphone-wrapper {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 main .cards-content .iphone-wrapper .iphone-wrapper h4 {
   color: #f5f5f7;
@@ -402,8 +345,8 @@ main .cards-content .iphone-wrapper #lowerLink:hover {
 }
 main .cards-content .ipad-wrapper {
   background-color: #fbfbfb;
-  width: 49.5%;
-  height: 36rem;
+  width: 49.7%;
+  height: 32rem;
   background-image: url("/index-images/IPad.jpg");
   background-position: bottom;
   background-size: 100rem;
@@ -411,6 +354,7 @@ main .cards-content .ipad-wrapper {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 main .cards-content .ipad-wrapper h4 {
   color: rgba(0, 0, 0, 0.8);
@@ -438,14 +382,15 @@ main .cards-content .ipad-wrapper #lowerLink:hover {
   text-decoration: underline;
 }
 main .cards-content .airpods-wrapper {
-  width: 49.5%;
-  height: 36.65rem;
+  width: 49.7%;
+  height: 32rem;
   background-image: url("index-images/ski.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 main .cards-content .airpods-wrapper .airpods-logo-card {
   width: auto;
@@ -484,14 +429,15 @@ main .cards-content .airpods-wrapper .airpods-logo-card #lowerLink:hover {
   text-decoration: underline;
 }
 main .cards-content .blackwatch-wrapper {
-  width: 49.5%;
-  height: 36.65rem;
+  width: 49.7%;
+  height: 32rem;
   background-image: url("index-images/apple_watch_1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 main .cards-content .blackwatch-wrapper .airpods-logo-card {
   width: auto;
@@ -527,14 +473,15 @@ main .cards-content .blackwatch-wrapper .airpods-logo-card #lowerLink:hover {
   text-decoration: underline;
 }
 main .cards-content .whitewatch-wrapper {
-  width: 49.5%;
-  height: 36.65rem;
+  width: 49.7%;
+  height: 32rem;
   background-image: url("index-images/apple_watch_2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 main .cards-content .whitewatch-wrapper .airpods-logo-card {
   width: auto;
@@ -571,13 +518,14 @@ main .cards-content .whitewatch-wrapper .airpods-logo-card #lowerLink:hover {
 }
 main .cards-content .speaker-wrapper {
   background-color: #fbfbfb;
-  width: 49.5%;
-  height: 36.65rem;
+  width: 49.7%;
+  height: 32rem;
   background-image: url("/index-images/speaker2.png");
   background-position: bottom;
   background-size: 60rem;
   background-repeat: no-repeat;
   text-align: center;
+  margin-bottom: 10px;
 }
 main .cards-content .speaker-wrapper h4 {
   color: rgba(0, 0, 0, 0.8);
@@ -707,12 +655,69 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   color: #1D1D1F;
 }
 
+.footnote-1 {
+  width: 100%;
+  padding-top: 20px;
+  background-color: #f5f5f7;
+  line-height: 15px;
+}
+.footnote-1 .cross {
+  font-size: 8px;
+}
+.footnote-1 span {
+  font-size: 12px;
+}
+.footnote-1 p {
+  width: 80%;
+  margin: auto;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #848484;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.footnote-1 .strong {
+  color: rgba(0, 0, 0, 0.668);
+}
+.footnote-1 .bold {
+  font-weight: 500;
+  font-size: 12px;
+  color: #7e7d7d;
+}
+
+.footer-apple-logo {
+  width: 100%;
+  background-color: #f5f5f7;
+}
+.footer-apple-logo .footer-apple-logo-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.footer-apple-logo .footer-apple-logo-wrapper .fa-apple {
+  color: rgba(0, 0, 0, 0.695);
+}
+.footer-apple-logo .footer-apple-logo-wrapper .fa-chevron-right {
+  color: rgba(0, 0, 0, 0.107);
+  padding: 0px 10px;
+}
+.footer-apple-logo .footer-apple-logo-wrapper p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #525255;
+}
+
 footer {
   height: auto;
   width: auto;
   display: flex;
   justify-content: center;
   background-color: #f5f5f7;
+  padding-top: 5px;
 }
 footer .footerContent {
   height: auto;
@@ -820,6 +825,112 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
   color: #545457;
   margin-left: 5rem;
   opacity: 0.8;
+}
+
+main {
+  width: auto;
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.support-footer {
+  display: flex;
+  flex-direction: column;
+}
+.support-footer .support-footer-social {
+  margin: auto;
+  width: 70%;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+}
+.support-footer .support-footer-social h5 {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.support-footer .support-footer-social .support-footer-social-icons i {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.771);
+  cursor: pointer;
+}
+.support-footer .support-footer-social .support-footer-social-icons i:nth-of-type(2) {
+  padding-left: 10px;
+}
+.support-footer .footer-apple-logo .footer-apple-logo-wrapper {
+  width: 70%;
+}
+.support-footer .footer-apple-logo .footer-apple-logo-wrapper p {
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.454);
+}
+.support-footer .support-footer-uls {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+  padding-bottom: 30px;
+}
+.support-footer .support-footer-uls ul {
+  list-style: none;
+}
+.support-footer .support-footer-uls ul h5 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #161617;
+  opacity: 0.9;
+  color: #1D1D1F;
+  margin-top: 15px;
+}
+.support-footer .support-footer-uls ul li {
+  padding-top: 5px;
+}
+.support-footer .support-footer-uls ul a {
+  text-decoration: none;
+  color: #525255;
+  font-weight: 300;
+  font-size: 0.8rem;
+  font-size: 0.74rem;
+}
+.support-footer .footer-copy-wrapper {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.support-footer .footer-copy-wrapper h5 {
+  color: rgba(0, 0, 0, 0.565);
+  font-weight: 400;
+  font-size: 12px;
+}
+.support-footer .footer-copy-wrapper .footer-copy-left {
+  display: flex;
+}
+.support-footer .footer-copy-wrapper .footer-copy-left ul {
+  display: flex;
+  list-style: none;
+}
+.support-footer .footer-copy-wrapper .footer-copy-left ul a {
+  text-decoration: none;
+  font-size: 12px;
+  padding: 0px 15px;
+  color: rgba(0, 0, 0, 0.454);
+  letter-spacing: 0.3px;
+  border-left: 1px solid rgba(0, 0, 0, 0.148);
+}
+.support-footer .footer-copy-wrapper .footer-copy-left ul a:first-of-type {
+  border: none;
+}
+.support-footer .footer-copy-wrapper .footer-copy-left h5 {
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.378);
 }
 
 * {

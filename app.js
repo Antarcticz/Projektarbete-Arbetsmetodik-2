@@ -1,12 +1,15 @@
-window.addEventListener("hashchange", () => {
-  if (
-    window.location.hash &&
-    window.location.hash.startsWith("#slider-span")
-  ) {
-    document.getElementById("carousel").scrollIntoView();
-  }
-});
+let slide = document.querySelectorAll('.slide');
+let inner = document.querySelectorAll('.inner');
 
+slide.forEach((s, i) => {
+    s.addEventListener('click', () => {
+        slide.forEach((Sl) => {
+            Sl.classList.remove('active');
+            Sl.style.transform = `translateX(${slide[i].getAttribute('data-t')}%)`;
+        })
+        slide[i].classList.add('active');
+    })
+})
 
 // Swiper JS    
 const swiper = new Swiper(".mySwiper", {

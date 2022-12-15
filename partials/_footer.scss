@@ -1,9 +1,69 @@
+.footnote-1 {
+  width: 100%;
+  padding-top: 20px;
+  background-color: #f5f5f7;
+  line-height: 15px;
+  .cross {
+    font-size: 8px;
+  }
+  span {
+    font-size: 12px;
+  }
+  p {
+    width: 80%;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    color: #848484;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    
+  }
+  .strong {
+    color: rgba(0, 0, 0, 0.668);
+  }
+  .bold {
+    font-weight: 500;
+    font-size: 12px;
+    color: #7e7d7d;
+  }
+}
+.footer-apple-logo {
+  width: 100%;
+  background-color: #f5f5f7;
+  .footer-apple-logo-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    .fa-apple {
+      color: rgba(0, 0, 0, 0.695);
+    }
+    .fa-chevron-right {
+      color: rgba(0, 0, 0, 0.107);
+      padding: 0px 10px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      color: #525255;
+
+    }
+  }
+}
+
 footer {
   height: auto;
   width: auto;
   display: flex;
   justify-content: center;
   background-color: #f5f5f7;
+  padding-top: 5px;
+
+  
 
   .footerContent {
     height: auto;

@@ -22,6 +22,7 @@
             padding-top: 5px;
             display: flex;
             align-items: center;
+
             a {
                 text-decoration: none;
                 color: $link-color-light-bg;
@@ -95,176 +96,90 @@
     }
 }
 
-
-.slide-container {
+.slider-container {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-
-    .image-slider {
+    margin-bottom: 1rem;
+    .slider-pannel {
         width: 100%;
-        height: 100vh;
-        position: absolute;
-        left: 0;
+        height: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        transition: 0.7s;
     }
-
-    .slides-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 10px 0 10px;
+    .slide {
         position: relative;
-
-        .carousel-button-wrapper {
+        overflow: hidden;
+        min-width: 1000px;
+        height: 100%;
+        margin: 0 5px;
+        border: 1px solid rgba(179, 179, 179,0.671);
+        box-shadow: 10px 30px 50px 0 rgba(179, 179, 179,0.671);
+        transform: translate(-70%);
+        transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    .inner {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .8s ease-in-out;
+        display: flex;
+        align-items: flex-end;
+        .inner-button-text {
             display: flex;
-            color: white;
-            position: absolute;
-            bottom: 3.5rem;
-            left: 4.5rem;
+            justify-content: flex-start;
             align-items: center;
-            font-family: $font;
-            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.307);
-
-            .dramathick {
-                font-weight: 500;
-                font-size: 20px;
-            }
-
+            margin: 3rem 5rem;
             h4 {
+                color: white;
                 font-weight: 300;
+                padding-left: 2.5rem;
                 font-size: 19px;
-            }
-
-            .streamnow-btn {
-                padding: 13px 20px;
-                border-radius: 25px;
-                border: none;
-                font-weight: 600;
-                letter-spacing: .3px;
-                align-items: center;
-                margin-right: 3rem;
-
-                i {
-                    padding-left: 3px;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.446);
+                span {
+                    font-weight: 500;
+                    font-size: 20px;
                 }
             }
-
-
+            .watchnow-btn {
+                padding: 13px 25px;
+                border-radius: 28px;
+                font-weight: 500;
+                letter-spacing: 0.3px;
+                border: none;
+                cursor: pointer;
+                i {
+                    margin-left: 2px;
+                }
+            }
         }
-
     }
-
-    img {
-        position: relative;
-        transition: .5s;
-        width: 1200px;
+    .active {
+        opacity: 1;
+        box-shadow: rgba(179, 179, 179);
+        z-index: 3;
     }
-
-    .button {
-        position: absolute;
-        width: 1200px;
-        height: 100vh;
+    .slide1 .inner {
+        background-image: url("/index-images/Emancipation.jpeg"); 
+    
     }
-
-    #slider-span1:target~.image-slider #img1,
-    #slider-span1:target~.image-slider #button-1 {
-        width: 1200px;
-        height: 90vh;
-        background-color: transparent;
-        filter: blur(1px);
+    .slide2 .inner {
+        background-image: url("/index-images/see.jpeg");
     }
-
-    #slider-span2:target~.image-slider #img2,
-    #slider-span2:target~.image-slider #button-2 {
-        width: 1200px;
-        height: 100vh;
-        background-color: transparent;
-        filter: blur(1px);
+    .slide3 .inner {
+        background-image: url("/index-images/shantaram.jpeg");
     }
-
-    #slider-span3:target~.image-slider #img3,
-    #slider-span3:target~.image-slider #button-3 {
-        width: 1200px;
-        height: 100vh;
-        background-color: transparent;
-        filter: blur(1px);
-    }
-
-    #slider-span4:target~.image-slider #img4,
-    #slider-span4:target~.image-slider #button-4 {
-        width: 1200px;
-        height: 100vh;
-        background-color: transparent;
-        filter: blur(1px);
-    }
-
-    #slider-span5:target~.image-slider #img5,
-    #slider-span5:target~.image-slider #button-5 {
-        width: 1200px;
-        height: 100vh;
-        background-color: transparent;
-        filter: blur(1px);
-    }
-
-    #slider-span6:target~.image-slider #img6,
-    #slider-span6:target~.image-slider #button-6 {
-        width: 1200px;
-        height: 100vh;
-        background-color: transparent;
-        filter: blur(1px);
-    }
-
-    #slider-span7:target~.image-slider #img7,
-    #slider-span7:target~.image-slider #button-7 {
-        width: 1200px;
-        height: 100vh;
-        background-color: transparent;
-        filter: blur(1px);
-    }
-
-
-    #slider-span1:target~.image-slider {
-        left: 255%;
-    }
-
-    #slider-span2:target~.image-slider {
-        left: 170%;
-    }
-
-    #slider-span3:target~.image-slider {
-        left: 85%;
-    }
-
-    #slider-span4:target~.image-slider {
-        left: 0%;
-    }
-
-    #slider-span5:target~.image-slider {
-        left: -85%;
-    }
-
-    #slider-span6:target~.image-slider {
-        left: -170%;
-    }
-
-    #slider-span7:target~.image-slider {
-        left: -255%;
-    }
-
-}
-
-.slides-div:nth-of-type(5) .carousel-button-wrapper .streamnow-btn {
-    background-color: white;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.09);
-}
-
-.slides-div:nth-of-type(5) .carousel-button-wrapper h4 {
-    text-shadow: 2px 2px 8px black;
+    
 }
 
 .section3 {
@@ -298,6 +213,7 @@
             padding-top: 20px;
             display: flex;
             align-items: center;
+
             a {
                 text-decoration: none;
                 color: $link-color-dark-bg;
@@ -322,26 +238,30 @@
 }
 
 main {
-    @include size (auto, 112rem);
+    @include size (98%, auto);
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 
     .cards-content {
         @include size (98%, auto);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: auto;
+
         i {
             font-size: 10px;
             padding-left: 3px
         }
+
         .iphone-wrapper {
-            @include size (49.5%, 36rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/IPhone_14_pro.jpg"));
             text-align: center;
             text-decoration: none;
             cursor: pointer;
+            margin-bottom: 10px;
+
             .iphone-wrapper h4 {
                 @include h4($nav-li-color);
             }
@@ -357,7 +277,7 @@ main {
 
         .ipad-wrapper {
             background-color: #fbfbfb;
-            @include size (49.5%, 36rem);
+            @include size (49.7%, 32rem);
             background-image: url("/index-images/IPad.jpg");
             background-position: bottom;
             background-size: 100rem;
@@ -365,6 +285,7 @@ main {
             text-decoration: none;
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
             h4 {
                 color: $nav-background-color;
@@ -382,10 +303,11 @@ main {
         }
 
         .airpods-wrapper {
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/ski.jpg"));
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
 
             .airpods-logo-card {
@@ -415,10 +337,11 @@ main {
         }
 
         .blackwatch-wrapper {
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/apple_watch_1.jpg"));
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
             .airpods-logo-card {
                 @include size (auto, 20rem);
@@ -448,10 +371,11 @@ main {
         }
 
         .whitewatch-wrapper {
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             @include background-image(url("index-images/apple_watch_2.jpg"));
             text-align: center;
             cursor: pointer;
+            margin-bottom: 10px;
 
             .airpods-logo-card {
                 @include size (auto, 20rem);
@@ -480,12 +404,13 @@ main {
 
         .speaker-wrapper {
             background-color: #fbfbfb;
-            @include size (49.5%, 36.65rem);
+            @include size (49.7%, 32rem);
             background-image: url("/index-images/speaker2.png");
             background-position: bottom;
             background-size: 60rem;
             background-repeat: no-repeat;
             text-align: center;
+            margin-bottom: 10px;
 
             h4 {
                 color: $nav-background-color;
