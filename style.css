@@ -829,6 +829,9 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   font-size: 14px;
   text-decoration: none;
 }
+.upper-in-section-1 .help-section-1 .first-help-1 .help-link-1:hover {
+  text-decoration: underline;
+}
 .upper-in-section-1 .help-section-1 .second-help-1 {
   width: 16rem;
   height: 4rem;
@@ -854,6 +857,9 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   font-size: 14px;
   text-decoration: none;
 }
+.upper-in-section-1 .help-section-1 .second-help-1 .help-link-1:hover {
+  text-decoration: underline;
+}
 
 .bottom-section-1 {
   width: 80%;
@@ -871,6 +877,8 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 .bottom-section-1 #store-cards {
   width: 9rem;
   height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .store-section4-header {
@@ -1160,10 +1168,57 @@ footer .navFooterBottom .navFooterBottomBottom .navFooterCountry a {
 }
 
 main {
-  width: auto;
-  height: 100rem;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
+}
+
+.top-wrapper {
+  background-image: url("/support-images/psp-hero-banner-homepage-welcome.image.large_2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vh;
+}
+.top-wrapper #header-on-wrapper {
+  text-align: center;
+  position: relative;
+  top: 12rem;
+  color: white;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.first-row-support {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.first-row-support .smallboxes {
+  width: 10rem;
+  height: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+.first-row-support .smallboxes #support-content-image {
+  width: 4.5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.first-row-support .smallboxes a {
+  text-decoration: none;
+  color: black;
+}
+.first-row-support .smallboxes a:hover {
+  text-decoration: underline;
 }
 
 .support-footer {
