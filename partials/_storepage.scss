@@ -409,7 +409,11 @@
 
     .circle-color5 {
         @include flex(row, center, center, nowrap);
-        @include size(12px, 12px);
+        @include size(50px, 12px);
+        position: relative;
+        bottom: 11rem;
+        left: 9rem;
+        border: 1px solid green;
     }
     .card-text5 {
         position: relative;

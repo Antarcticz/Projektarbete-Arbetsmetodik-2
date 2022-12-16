@@ -984,8 +984,12 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 12px;
+  width: 50px;
   height: 12px;
+  position: relative;
+  bottom: 11rem;
+  left: 9rem;
+  border: 1px solid green;
 }
 .store-section-5 .card-text5 {
   position: relative;
