@@ -787,7 +787,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   color: #6E6E73;
 }
 
-.store-section-2, store-section-5 {
+.store-section-2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -795,20 +795,20 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-wrap: nowrap;
   width: 100%;
 }
-.store-section-2 .container, store-section-5 .container {
+.store-section-2 .container {
   width: 100%;
   height: 58vh;
 }
-.store-section-2 .swiper-slide, store-section-5 .swiper-slide {
+.store-section-2 .swiper-slide {
   width: 400px;
   height: 500px;
   margin: auto;
 }
-.store-section-2 .card-content, store-section-5 .card-content {
+.store-section-2 .card-content {
   width: 400px;
   height: 500px;
 }
-.store-section-2 .card, store-section-5 .card {
+.store-section-2 .card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -816,11 +816,11 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-wrap: nowrap;
 }
 @media screen and (max-width: 1820px) {
-  .store-section-2 .card, store-section-5 .card {
+  .store-section-2 .card {
     margin-left: 6rem;
   }
 }
-.store-section-2 .image, store-section-5 .image {
+.store-section-2 .image {
   width: 399.99px;
   height: 499.99px;
   transition-duration: 0.5s;
@@ -828,47 +828,165 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
   cursor: pointer;
 }
-.store-section-2 .image:hover, store-section-5 .image:hover {
+.store-section-2 .image:hover {
   width: 403px;
   height: 503px;
   transition-duration: 0.5s;
   box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
 }
-.store-section-2 img, store-section-5 img {
+.store-section-2 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
 }
-.store-section-2 .card-text, store-section-5 .card-text {
+.store-section-2 .card-text {
   position: relative;
   bottom: 29.5rem;
   left: 1.5rem;
 }
-.store-section-2 .card-text-white-color h3, store-section-5 .card-text-white-color h3 {
+.store-section-2 .card-text-white-color h3 {
   color: #F5F5F7;
 }
 .store-section-2 .card-text-white-color p,
-.store-section-2 .card-text-white-color span, store-section-5 .card-text-white-color p,
-store-section-5 .card-text-white-color span {
+.store-section-2 .card-text-white-color span {
   color: #fff;
 }
-.store-section-2 h3, store-section-5 h3 {
+.store-section-2 h3 {
   font-size: 0.7rem;
   font-weight: 600;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #6E6E73;
 }
-.store-section-2 p, store-section-5 p {
+.store-section-2 p {
   font-size: 1.7rem;
   font-weight: 500;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #1D1D1F;
 }
-.store-section-2 span, store-section-5 span {
+.store-section-2 span {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  color: #1D1D1F;
+}
+
+.store-header-wrapper5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-right: 16.5%;
+  margin-top: 10vh;
+  background-color: #f5f5f7;
+}
+.store-header-wrapper5 .header-h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+  color: #1D1D1F;
+}
+.store-header-wrapper5 .header-span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+  color: #6E6E73;
+}
+
+.store-section-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.store-section-5 .container5 {
+  width: 100%;
+  height: 58vh;
+}
+.store-section-5 .swiper-slide {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+}
+.store-section-5 .card-content5 {
+  width: 400px;
+  height: 500px;
+}
+.store-section-5 .card5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1820px) {
+  .store-section-5 .card5 {
+    margin-left: 6rem;
+  }
+}
+.store-section-5 .image5 {
+  width: 399.99px;
+  height: 499.99px;
+  transition-duration: 0.5s;
+  border-radius: 1rem;
+  box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
+  cursor: pointer;
+}
+.store-section-5 .image5:hover {
+  width: 403px;
+  height: 503px;
+  transition-duration: 0.5s;
+  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
+}
+.store-section-5 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.store-section-5 .circle-color5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 12px;
+  height: 12px;
+}
+.store-section-5 .card-text5 {
+  position: relative;
+  bottom: 29.5rem;
+  left: 1.5rem;
+}
+.store-section-5 .card-text-white-color5 h3 {
+  color: #F5F5F7;
+}
+.store-section-5 .card-text-white-color5 p,
+.store-section-5 .card-text-white-color5 span {
+  color: #fff;
+}
+.store-section-5 h3 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #6E6E73;
+}
+.store-section-5 p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #1D1D1F;
+}
+.store-section-5 span {
   font-size: 1rem;
   font-weight: 400;
   text-align: left;
