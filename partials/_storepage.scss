@@ -230,7 +230,7 @@
         object-fit: cover;
     }
 }
-
+// --------------------------------------------Section 2---------------------------------------------------
 .store-header-wrapper {
     @include flex(row, center, center, nowrap);
     margin-right: 25%;
@@ -331,6 +331,7 @@
         color: #1D1D1F;
     }
 }
+// ----------------------------------------------------Section 4---------------------------------------------------
 .store-section4-header {
     display: flex;
 
