@@ -631,7 +631,8 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 .store-section-2 .card-text-white-color h3 {
   color: #F5F5F7;
 }
-.store-section-2 .card-text-white-color p, .store-section-2 .card-text-white-color span {
+.store-section-2 .card-text-white-color p,
+.store-section-2 .card-text-white-color span {
   color: #fff;
 }
 .store-section-2 h3 {
@@ -653,6 +654,223 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   font-weight: 400;
   text-align: left;
   color: #1D1D1F;
+}
+
+.slideshow-container {
+  position: relative;
+  top: 20;
+  background: rgba(255, 255, 255, 0.9450980392);
+  width: 100%;
+  height: 8rem;
+}
+
+@-webkit-keyframes slide-left {
+  from {
+    margin-left: -500px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: -500px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.slide-right {
+  width: 100%;
+}
+
+.slide-right h2 {
+  -webkit-animation: 2s slide-right;
+          animation: 2s slide-right;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    margin-right: -400px;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: -400px;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+/* Slides */
+.mySlides {
+  height: auto;
+  display: none;
+  text-align: center;
+  position: relative;
+  top: 6rem;
+  -webkit-animation: 1s slide-right;
+          animation: 1s slide-right;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 10px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: 10rem;
+}
+@media screen and (max-width: 800px) {
+  .prev,
+.next {
+    margin-left: auto;
+  }
+}
+
+.next {
+  margin-left: 120rem;
+  border-radius: 3px 0 0 3px;
+}
+
+.section-1-store {
+  width: auto;
+  height: 35rem;
+  display: flex;
+  position: relative;
+  left: 30rem;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .section-1-store {
+    height: 29rem;
+  }
+}
+
+.upper-in-section-1 {
+  width: 45%;
+  height: 17.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 800px) {
+  .upper-in-section-1 {
+    height: 29rem;
+  }
+}
+.upper-in-section-1 .header-section-1 {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.upper-in-section-1 .header-section-1 .header-section-placement {
+  width: auto;
+  height: 50%;
+}
+.upper-in-section-1 .header-section-1 .header-section-placement .main-header-section-one {
+  font-size: 46px;
+  font-weight: 600;
+}
+.upper-in-section-1 .header-section-1 .header-section-placement .main-header-section-one h2 {
+  color: black;
+}
+.upper-in-section-1 .header-section-1 .header-section-placement .main-header-section-one .sub-header {
+  color: #6E6E73;
+}
+.upper-in-section-1 .help-section-1 {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.upper-in-section-1 .help-section-1 .first-help-1 {
+  width: 16rem;
+  height: 4rem;
+  text-align: center;
+}
+.upper-in-section-1 .help-section-1 .first-help-1 #assistant {
+  width: 2.5rem;
+  height: 2.5rem;
+  float: left;
+}
+.upper-in-section-1 .help-section-1 .first-help-1 p {
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  bottom: 0.8rem;
+  right: 1.4em;
+}
+.upper-in-section-1 .help-section-1 .first-help-1 .help-link-1 {
+  position: relative;
+  bottom: 1.5rem;
+  right: 1.4rem;
+  font-size: 14px;
+  text-decoration: none;
+}
+.upper-in-section-1 .help-section-1 .second-help-1 {
+  width: 16rem;
+  height: 4rem;
+  text-align: center;
+}
+.upper-in-section-1 .help-section-1 .second-help-1 #assistant {
+  width: 2.5rem;
+  height: 2.5rem;
+  float: left;
+}
+.upper-in-section-1 .help-section-1 .second-help-1 p {
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  bottom: 0.8rem;
+  right: 1.4em;
+}
+.upper-in-section-1 .help-section-1 .second-help-1 .help-link-1 {
+  position: relative;
+  bottom: 1.5rem;
+  right: 1.4rem;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.bottom-section-1 {
+  width: 80%;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 14px;
+}
+.bottom-section-1 .store-bottom-cards {
+  width: 10rem;
+  height: 100%;
+}
+.bottom-section-1 #store-cards {
+  width: 9rem;
+  height: 7rem;
 }
 
 .footnote-1 {
@@ -943,4 +1161,6 @@ main {
 body {
   overflow-x: hidden;
   background-color: #f5f5f7;
+  width: auto;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

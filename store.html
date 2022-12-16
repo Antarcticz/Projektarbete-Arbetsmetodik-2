@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Projektarbete - Apple Hemsida</title>
@@ -58,9 +60,96 @@
         </div>
     </nav>
 
-    <div class="rotating-banner"></div>
-    <section class="store-section-1">
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <p>Get your holiday gifts on time. <a href="">See when to order</a></p>
+        </div>
+
+        <div class="mySlides">
+            <p>Save 5% on Apple products with a new Apple Card through December 25. Only at Apple. Exclusions and terms
+                apply. <a href="">Learn
+                    more ></a></p>
+
+        </div>
+
+        <a id="prev" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <section class="section-1-store">
+        <div class="upper-in-section-1">
+            <div class="header-section-1">
+                <div class="header-section-placement">
+                    <h2 class="main-header-section-one">Store. <span class="sub-header">The best way to buy the products
+                            you love.</span></h2>
+                </div>
+            </div>
+            <div class="help-section-1">
+                <div class="first-help-1">
+                    <img id="assistant" src="/store-images/assist-icon.jpeg" alt="">
+                    <p>Need shopping help?</p>
+                    <a class="help-link-1" href="">Ask a specialist</a>
+                </div>
+                <div class="second-help-1">
+                    <img id="assistant" src="/store-images/icon-love-apple.png" alt="">
+                    <p>Need shopping help?</p>
+                    <a class="help-link-1" href="">Ask a specialist</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section-1">
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture1.png" alt="">
+                <p>Mac</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture2.png" alt="">
+                <p>iPhone</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture3.png" alt="">
+                <p>iPad</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture4.png" alt="">
+                <p>Apple Watch</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture5.png" alt="">
+                <p>Airpods</p>
+            </div>
+
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture7.png" alt="">
+                <p>AirTag</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture8.png" alt="">
+                <p>Apple TV 4K</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture9.png" alt="">
+                <p>Accessories</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture10.png" alt="">
+                <p>Apple Gift Card</p>
+            </div>
+            <div class="store-bottom-cards">
+                <img id="store-cards" src="/store-images/storepicture11.png" alt="">
+                <p>Mac</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- <section class="store-section-1">
         <header>
+            div
 
         </header>
         <div>
@@ -93,7 +182,7 @@
         <div>
             <img src="" alt="">
         </div>
-    </section>
+    </section> -->
 
     <header class="store-header-wrapper">
         <h3 class="header-h3">The latest. <span class="header-span">Take a look at what's, right now.</span></h3>
@@ -136,7 +225,7 @@
                         <div class="card-text">
                             <h3>IPAD</h3>
                             <p>Lovable. Drawable.<br>
-                            Magical.</p>
+                                Magical.</p>
                             <span>From $499 or $37.41/mo. for 12 mo.</span>
                         </div>
                     </div>
@@ -187,7 +276,7 @@
                         <div class="card-text">
                             <h3>APPLE TV 4K</h3>
                             <p>The Apple experience.<br>
-                            Cinematic in every sense.</p>
+                                Cinematic in every sense.</p>
                             <span>From $129 or $21.50/mo. for 6 mo.</span>
                         </div>
                     </div>
@@ -229,10 +318,11 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+
         <!-- <div class="swiper-pagination"></div> -->
     </section>
 
@@ -274,11 +364,11 @@
                 <path id="" d=""></path>
             </g>
             <p>
-    
+
                 <span></span>
-    
+
                 <span></span>
-    
+
                 <span></span>
             </p>
         </div>
@@ -287,7 +377,7 @@
                 <path id="" d=""></path>
             </g>
             <p>
-    
+
                 <span></span>
 
             </p>
@@ -306,9 +396,9 @@
                 <path id="" d=""></path>
             </g>
             <p>
-    
+
                 <span></span>
-    
+
             </p>
         </div>
         <div>
@@ -317,9 +407,9 @@
             </g>
             <p>
                 <span></span>
-                
+
             </p>
-        </div> 
+        </div>
     </section>
     <section class="store-section-5">
         <header>
@@ -481,25 +571,72 @@
     </section>
 
     <div class="footnote-1">
-        <p><span>1. </span><span class="bold">The following purchases with Apple Card are ineligible to earn 5% back: monthly financing through Apple Card Monthly Installments, Apple iPhone Payments, the iPhone Upgrade Program, and wireless carrier financing plans; <span class="strong">Apple Media Services</span>; AppleCare+ monthly payments.</span> Subject to credit approval. Valid only on qualifying purchases in U.S. for new Apple Card customers who open an account and use it from 12/1/22 to 12/25/22 at Apple Store locations, apple.com, the Apple Store app, or by calling 1-800-MY-APPLE. Accounts opened before 12/1/22 or after 12/25/22 do not qualify. New Apple Card users added to an Apple Card Family account opened during offer period can earn 5% back on their own purchases. For Apple Card Family co-owners and participants, bonus Daily Cash will be disbursed within 7 days of your qualifying purchase. Not valid for existing Apple Card users who merge their Apple Card accounts to become Co-Owners. 5% is total amount of Daily Cash that can be earned for qualifying Apple purchases using Apple Card. Returning qualified items that were purchased during offer period may impact your cash back. 5% savings is earned as Daily Cash and transferred to your Apple Cash card when transactions post to your Apple Card account. If you do not have an Apple Cash card, Daily Cash can be applied by you as a credit on your statement balance. See the Apple Card Customer Agreement for more details on Daily Cash and qualifying transactions. Changes to your account status during offer period may delay the fulfillment of your Daily Cash bonus. <br><br>
-            * Pricing for iPhone 14 and iPhone 14 Plus includes a $30 connectivity discount that requires activation with AT&T, T-Mobile, Sprint, or Verizon. Available to qualified customers and requires 24-month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple. iPhone activation required with AT&T, T-Mobile, Sprint, or Verizon for purchases made with ACMI at an Apple Store. Subject to credit approval and credit limit. Taxes and shipping are not included in ACMI and are subject to your card's variable APR. Additional Apple Card Monthly Installments terms are in the Apple Card Customer Agreement. Additional iPhone Payments terms are here. ACMI is not available for purchases made online at special storefronts. The last month's payment for each product will be the product's purchase price, less all other payments at the monthly payment amount.<br><br> ◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option available only in the U.S. to select at checkout for certain Apple products purchased at Apple Store locations, apple.com(Opens in a new window), the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See https://support.apple.com/kb/HT211204(Opens in a new window) for more information about eligible products. Variable APRs for Apple Card other than ACMI range from 13.99% to 24.99% based on creditworthiness. Rates as of October 1, 2022. If you choose the pay-in-full or one-time-payment option for an ACMI-eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement(Opens in a new window) for more information. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. iPhone activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Verizon, Sprint, or T-Mobile. <br><br>
-            <span class="cross">†</span> Monthly pricing is available when you select Apple Card Monthly Installments (ACMI) as your payment type at checkout at Apple, and is subject to credit approval and credit limit. Financing terms vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. See the Apple Card Customer Agreement for more information.
+        <p><span>1. </span><span class="bold">The following purchases with Apple Card are ineligible to earn 5% back:
+                monthly financing through Apple Card Monthly Installments, Apple iPhone Payments, the iPhone Upgrade
+                Program, and wireless carrier financing plans; <span class="strong">Apple Media Services</span>;
+                AppleCare+ monthly payments.</span> Subject to credit approval. Valid only on qualifying purchases in
+            U.S. for new Apple Card customers who open an account and use it from 12/1/22 to 12/25/22 at Apple Store
+            locations, apple.com, the Apple Store app, or by calling 1-800-MY-APPLE. Accounts opened before 12/1/22 or
+            after 12/25/22 do not qualify. New Apple Card users added to an Apple Card Family account opened during
+            offer period can earn 5% back on their own purchases. For Apple Card Family co-owners and participants,
+            bonus Daily Cash will be disbursed within 7 days of your qualifying purchase. Not valid for existing Apple
+            Card users who merge their Apple Card accounts to become Co-Owners. 5% is total amount of Daily Cash that
+            can be earned for qualifying Apple purchases using Apple Card. Returning qualified items that were purchased
+            during offer period may impact your cash back. 5% savings is earned as Daily Cash and transferred to your
+            Apple Cash card when transactions post to your Apple Card account. If you do not have an Apple Cash card,
+            Daily Cash can be applied by you as a credit on your statement balance. See the Apple Card Customer
+            Agreement for more details on Daily Cash and qualifying transactions. Changes to your account status during
+            offer period may delay the fulfillment of your Daily Cash bonus. <br><br>
+            * Pricing for iPhone 14 and iPhone 14 Plus includes a $30 connectivity discount that requires activation
+            with AT&T, T-Mobile, Sprint, or Verizon. Available to qualified customers and requires 24-month installment
+            loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at
+            Apple. iPhone activation required with AT&T, T-Mobile, Sprint, or Verizon for purchases made with ACMI at an
+            Apple Store. Subject to credit approval and credit limit. Taxes and shipping are not included in ACMI and
+            are subject to your card's variable APR. Additional Apple Card Monthly Installments terms are in the Apple
+            Card Customer Agreement. Additional iPhone Payments terms are here. ACMI is not available for purchases made
+            online at special storefronts. The last month's payment for each product will be the product's purchase
+            price, less all other payments at the monthly payment amount.<br><br> ◊ Apple Card Monthly Installments
+            (ACMI) is a 0% APR payment option available only in the U.S. to select at checkout for certain Apple
+            products purchased at Apple Store locations, apple.com(Opens in a new window), the Apple Store app, or by
+            calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See
+            https://support.apple.com/kb/HT211204(Opens in a new window) for more information about eligible products.
+            Variable APRs for Apple Card other than ACMI range from 13.99% to 24.99% based on creditworthiness. Rates as
+            of October 1, 2022. If you choose the pay-in-full or one-time-payment option for an ACMI-eligible purchase
+            instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable
+            APR assigned to your Apple Card. Taxes and shipping are not included in ACMI and are subject to your card’s
+            variable APR. See the Apple Card Customer Agreement(Opens in a new window) for more information. ACMI is not
+            available for purchases made online at the following special stores: Apple Employee Purchase Plan;
+            participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and
+            Veterans and Military Purchase Programs, or on refurbished devices. iPhone activation required on iPhone
+            purchases made at an Apple Store with one of these national carriers: AT&T, Verizon, Sprint, or T-Mobile.
+            <br><br>
+            <span class="cross">†</span> Monthly pricing is available when you select Apple Card Monthly Installments
+            (ACMI) as your payment type at checkout at Apple, and is subject to credit approval and credit limit.
+            Financing terms vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s
+            variable APR. ACMI is not available for purchases made online at special storefronts. The last month’s
+            payment for each product will be the product’s purchase price, less all other payments at the monthly
+            payment amount. See the Apple Card Customer Agreement for more information.
 
-            <br><br> To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install. <br><br>
+            <br><br> To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or
+            iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General >
+            Software Update. Tap Download and Install. <br><br>
             Available for qualifying applicants in the United States.
             <br><br>
             Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218. <br><br>
             Available for qualifying applicants in the United States.
-        <br><br>
-        Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
-        <br><br>
-        ° Items purchased with carrier financing are not eligible for extended returns and are subject to the standard return policy.
-        <br><br>
-        1. Special pricing available to qualified customers. To learn more about how to start qualifying toward special pricing, talk to an Apple Specialist in a store or give us a call at 1-800-MY-APPLE. 
-        <br><br>
-        <span class="cross">††</span> We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.
-    </p>
-        
+            <br><br>
+            Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+            <br><br>
+            ° Items purchased with carrier financing are not eligible for extended returns and are subject to the
+            standard return policy.
+            <br><br>
+            1. Special pricing available to qualified customers. To learn more about how to start qualifying toward
+            special pricing, talk to an Apple Specialist in a store or give us a call at 1-800-MY-APPLE.
+            <br><br>
+            <span class="cross">††</span> We approximate your location from your internet IP address by matching it to a
+            geographic region or from the location entered during your previous visit to Apple.
+        </p>
+
     </div>
     <div class="footer-apple-logo">
         <div class="footer-apple-logo-wrapper">
@@ -509,7 +646,7 @@
         </div>
     </div>
     <footer>
-        
+
         <div class="footerContent">
             <nav class="navFooter">
                 <div class="contentUpperFooter">
@@ -753,10 +890,11 @@
             </section>
         </div>
     </footer>
-     <!-- Swiper JS -->
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://kit.fontawesome.com/3e10381a88.js" crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
 </body>
+
 </html>
