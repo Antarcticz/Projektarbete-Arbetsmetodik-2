@@ -371,20 +371,42 @@
         cursor: pointer;
 
     }
-
     .image5:hover {
         @include size(403px, 503px);
         transition-duration: 0.5s;
         box-shadow: -1px 1px 10px 2px #00000030;
 
     }
-
     img {
         @include size(100%, 100%);
         object-fit: cover;
         border-radius: 1rem;
 
     }
+
+    .thin-image5 {
+        @include flex(row, center, center, nowrap);
+        @include size(312.99px, 499.99px);
+        transition-duration: 0.5s;
+        border-radius: 1rem;
+        box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
+        cursor: pointer;
+
+    }
+    .thin-image5:hover {
+        @include size(316px, 503px);
+        transition-duration: 0.5s;
+        box-shadow: -1px 1px 10px 2px #00000030;
+
+    }
+
+    .small-img {
+        @include size(230px, 230px);
+        object-fit: cover;
+        margin-bottom: 8rem;
+        border: 1px solid blue;
+    }
+
     .circle-color5 {
         @include flex(row, center, center, nowrap);
         @include size(12px, 12px);
@@ -393,6 +415,13 @@
         position: relative;
         bottom: 29.5rem;
         left: 1.5rem;
+    }
+    .card-small-text5 {
+        position: relative;
+        bottom: 10rem;
+        left: 1.5rem;
+        width:252px;
+        border: 1px solid red;
     }
 
     .card-text-white-color5 {
@@ -407,19 +436,19 @@
     }
 
     h3 {
-        @include text-size(0.7rem, 600, left);
+        @include text-size(0.8rem, 400, left);
         margin-bottom: 0.5rem;
-        color: #6E6E73;
+        color: #BF4800;
     }
 
     p {
-        @include text-size(1.7rem, 500, left);
-        margin-bottom: 0.5rem;
+        @include text-size(1rem, 600, left);
+        margin-bottom: 2rem;
         color: #1D1D1F;
     }
 
     span {
-        @include text-size(1rem, 400, left);
+        @include text-size(0.9rem, 400, left);
         color: #1D1D1F;
     }
 }

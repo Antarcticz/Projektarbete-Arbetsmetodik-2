@@ -951,6 +951,33 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
      object-fit: cover;
   border-radius: 1rem;
 }
+.store-section-5 .thin-image5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 312.99px;
+  height: 499.99px;
+  transition-duration: 0.5s;
+  border-radius: 1rem;
+  box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
+  cursor: pointer;
+}
+.store-section-5 .thin-image5:hover {
+  width: 316px;
+  height: 503px;
+  transition-duration: 0.5s;
+  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
+}
+.store-section-5 .small-img {
+  width: 230px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 8rem;
+  border: 1px solid blue;
+}
 .store-section-5 .circle-color5 {
   display: flex;
   flex-direction: row;
@@ -965,6 +992,13 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   bottom: 29.5rem;
   left: 1.5rem;
 }
+.store-section-5 .card-small-text5 {
+  position: relative;
+  bottom: 10rem;
+  left: 1.5rem;
+  width: 252px;
+  border: 1px solid red;
+}
 .store-section-5 .card-text-white-color5 h3 {
   color: #F5F5F7;
 }
@@ -973,21 +1007,21 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   color: #fff;
 }
 .store-section-5 h3 {
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 400;
   text-align: left;
   margin-bottom: 0.5rem;
-  color: #6E6E73;
+  color: #BF4800;
 }
 .store-section-5 p {
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   text-align: left;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   color: #1D1D1F;
 }
 .store-section-5 span {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   text-align: left;
   color: #1D1D1F;
