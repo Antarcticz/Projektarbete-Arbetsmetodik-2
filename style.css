@@ -829,6 +829,9 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   font-size: 14px;
   text-decoration: none;
 }
+.upper-in-section-1 .help-section-1 .first-help-1 .help-link-1:hover {
+  text-decoration: underline;
+}
 .upper-in-section-1 .help-section-1 .second-help-1 {
   width: 16rem;
   height: 4rem;
@@ -854,6 +857,9 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   font-size: 14px;
   text-decoration: none;
 }
+.upper-in-section-1 .help-section-1 .second-help-1 .help-link-1:hover {
+  text-decoration: underline;
+}
 
 .bottom-section-1 {
   width: 80%;
@@ -871,6 +877,8 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 .bottom-section-1 #store-cards {
   width: 9rem;
   height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footnote-1 {
@@ -1163,4 +1171,28 @@ body {
   background-color: #f5f5f7;
   width: auto;
   height: auto;
+}
+
+main {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-wrapper {
+  background-image: url("/support-images/psp-hero-banner-homepage-welcome.image.large_2x.jpg");
+  height: 55vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-wrapper #header-on-wrapper {
+  text-align: center;
+  position: relative;
+  top: 12rem;
+  color: white;
+  font-size: 48px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
