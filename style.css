@@ -962,6 +962,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   transition-duration: 0.5s;
   border-radius: 1rem;
   box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
+  background-color: #fff;
   cursor: pointer;
 }
 .store-section-5 .thin-image5:hover {
@@ -976,7 +977,6 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 8rem;
-  border: 1px solid blue;
 }
 .store-section-5 .circle-color5 {
   display: flex;
@@ -984,12 +984,11 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 50px;
+  width: 12px;
   height: 12px;
   position: relative;
   bottom: 11rem;
   left: 9rem;
-  border: 1px solid green;
 }
 .store-section-5 .card-text5 {
   position: relative;
@@ -1001,7 +1000,6 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   bottom: 10rem;
   left: 1.5rem;
   width: 252px;
-  border: 1px solid red;
 }
 .store-section-5 .card-text-white-color5 h3 {
   color: #F5F5F7;

@@ -390,6 +390,7 @@
         transition-duration: 0.5s;
         border-radius: 1rem;
         box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
+        background-color: #fff;
         cursor: pointer;
 
     }
@@ -404,16 +405,16 @@
         @include size(230px, 230px);
         object-fit: cover;
         margin-bottom: 8rem;
-        border: 1px solid blue;
+        // border: 1px solid blue;
     }
 
     .circle-color5 {
         @include flex(row, center, center, nowrap);
-        @include size(50px, 12px);
+        @include size(12px, 12px);
         position: relative;
         bottom: 11rem;
         left: 9rem;
-        border: 1px solid green;
+        // border: 1px solid green;
     }
     .card-text5 {
         position: relative;
@@ -425,7 +426,7 @@
         bottom: 10rem;
         left: 1.5rem;
         width:252px;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     .card-text-white-color5 {
