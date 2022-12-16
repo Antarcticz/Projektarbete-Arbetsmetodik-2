@@ -20,28 +20,3 @@ body {
     width: auto;
     height: auto;
 }
-
-main {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.top-wrapper {
-    background-image: url("/support-images/psp-hero-banner-homepage-welcome.image.large_2x.jpg");
-    height: 55vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    #header-on-wrapper {
-        text-align: center;
-        position: relative;
-        top: 12rem;
-        color: white;
-        font-size: 48px;
-        font-weight: 400;
-    }
-}
