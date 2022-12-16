@@ -264,6 +264,10 @@
                 right: 1.4rem;
                 font-size: 14px;
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
         }
@@ -295,6 +299,10 @@
                 right: 1.4rem;
                 font-size: 14px;
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -319,5 +327,6 @@
     #store-cards {
         width: 9rem;
         height: 7rem;
+        object-fit: cover;
     }
 }
