@@ -236,7 +236,7 @@
     }
 }
 
-.store-section-2 {
+.store-section-2, store-section-5 {
     @include flex(row, center, center, nowrap);
     width: 100%;
 
