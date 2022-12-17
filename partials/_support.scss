@@ -68,8 +68,19 @@ main {
       flex-direction: column;
 
       .promotion-images {
-        @include size (5rem, 5rem);
+        @include size (3rem, 3rem);
         align-self: center;
+      }
+
+      a {
+        position: relative;
+        top: 1rem;
+        text-decoration: none;
+        color: #0070c9;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 

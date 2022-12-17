@@ -1246,9 +1246,18 @@ main {
   flex-direction: column;
 }
 .second-row .second-row-promotion .promotion-box .promotion-images {
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   align-self: center;
+}
+.second-row .second-row-promotion .promotion-box a {
+  position: relative;
+  top: 1rem;
+  text-decoration: none;
+  color: #0070c9;
+}
+.second-row .second-row-promotion .promotion-box a:hover {
+  text-decoration: underline;
 }
 .second-row .second-row-promotion .vertical-line {
   width: 1px;
