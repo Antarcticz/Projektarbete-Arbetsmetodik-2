@@ -1176,6 +1176,7 @@ main {
   border: 1px solid black;
   width: 100%;
   height: auto;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -1227,6 +1228,8 @@ main {
 
 .second-row {
   width: 100%;
+  height: auto;
+  width: 100%;
   height: 12rem;
   border-top: 1px solid #dddddd;
   display: flex;
@@ -1237,6 +1240,7 @@ main {
 }
 .second-row .second-row-promotion {
   width: 70rem;
+  height: auto;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -1268,7 +1272,6 @@ main {
 
 .searchfieldTitle {
   position: relative;
-  top: 2rem;
   width: 100%;
   height: 12rem;
   border: 1px solid #dddddd;
@@ -1316,6 +1319,70 @@ main {
   position: relative;
   left: 4rem;
   top: 0.2rem;
+}
+
+.third-row {
+  width: 100%;
+  height: 21rem;
+  display: flex;
+  justify-content: center;
+}
+.third-row .third-row-content {
+  width: 60rem;
+  height: auto;
+  width: 60rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.third-row .third-row-content .updateIOS {
+  width: 50%;
+  background-image: url("/support-images/featured-section-update-ios-promo_2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 29rem;
+  align-items: flex-start;
+}
+.third-row .third-row-content .updateIOScontent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.third-row .third-row-content .updateIOScontent .headerUpdateIOS {
+  width: auto;
+  height: 20%;
+  width: auto;
+  height: 20%;
+}
+.third-row .third-row-content .updateIOScontent .headerUpdateIOS h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.third-row .third-row-content .updateIOScontent .pContent {
+  width: auto;
+  height: 40%;
+}
+.third-row .third-row-content .updateIOScontent .pContent p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.third-row .third-row-content .updateIOScontent .aLinkContent {
+  width: auto;
+  height: 20%;
+}
+.third-row .third-row-content .updateIOScontent .aLinkContent a {
+  text-decoration: none;
+  color: #0070c9;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 300;
+  position: relative;
+  bottom: 10px;
+}
+.third-row .third-row-content .updateIOScontent .aLinkContent a:hover {
+  text-decoration: underline;
 }
 
 .support-footer {

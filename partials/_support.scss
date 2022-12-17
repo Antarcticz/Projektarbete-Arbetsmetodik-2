@@ -1,6 +1,7 @@
 main {
   border: 1px solid black;
   @include size (100%, auto);
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -52,6 +53,8 @@ main {
 }
 
 .second-row {
+  width: 100%;
+  height: auto;
   @include size (100%, 12rem);
   border-top: 1px solid #dddddd;
   @include flex (row, center, center, wrap);
@@ -59,6 +62,7 @@ main {
 
   .second-row-promotion {
     width: 70rem;
+    height: auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -95,7 +99,7 @@ main {
 
 .searchfieldTitle {
   position: relative;
-  top: 2rem;
+
   @include size (100%, 12rem);
   border: 1px solid #dddddd;
   align-self: center;
@@ -131,6 +135,76 @@ main {
       position: relative;
       left: 4rem;
       top: 0.2rem;
+    }
+  }
+
+}
+
+.third-row {
+  @include size (100%, 21rem);
+  display: flex;
+  justify-content: center;
+
+  .third-row-content {
+    @include size (60rem, auto);
+    width: 60rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    .updateIOS {
+      width: 50%;
+      background-image: url("/support-images/featured-section-update-ios-promo_2x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 29rem;
+      align-items: flex-start;
+    }
+
+    .updateIOScontent {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .headerUpdateIOS {
+        @include size (auto, 20%);
+        width: auto;
+        height: 20%;
+
+        h2 {
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+
+      .pContent {
+        @include size (auto, 40%);
+
+        p {
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 1.4;
+        }
+      }
+
+      .aLinkContent {
+        @include size (auto, 20%);
+
+        a {
+          text-decoration: none;
+          color: #0070c9;
+          font-size: 22px;
+          line-height: 1.4;
+          font-weight: 300;
+          position: relative;
+          bottom: 10px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 
