@@ -1177,6 +1177,7 @@ main {
   border: 1px solid black;
   width: 100%;
   height: auto;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -1186,7 +1187,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 55vh;
+  height: 50vh;
 }
 .top-wrapper #header-on-wrapper {
   text-align: center;
@@ -1202,7 +1203,7 @@ main {
   height: 10rem;
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .first-row-support .smallboxes {
   width: 10rem;
@@ -1212,7 +1213,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
 }
 .first-row-support .smallboxes #support-content-image {
   width: 4.5rem;
@@ -1224,6 +1224,165 @@ main {
   color: black;
 }
 .first-row-support .smallboxes a:hover {
+  text-decoration: underline;
+}
+
+.second-row {
+  width: 100%;
+  height: auto;
+  width: 100%;
+  height: 12rem;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.second-row .second-row-promotion {
+  width: 70rem;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.second-row .second-row-promotion .promotion-box {
+  display: flex;
+  flex-direction: column;
+}
+.second-row .second-row-promotion .promotion-box .promotion-images {
+  width: 3rem;
+  height: 3rem;
+  align-self: center;
+}
+.second-row .second-row-promotion .promotion-box a {
+  position: relative;
+  top: 1rem;
+  text-decoration: none;
+  color: #0070c9;
+}
+.second-row .second-row-promotion .promotion-box a:hover {
+  text-decoration: underline;
+}
+.second-row .second-row-promotion .vertical-line {
+  width: 1px;
+  height: 7rem;
+  align-self: center;
+  background-color: #dddddd;
+}
+
+.searchfieldTitle {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  border: 1px solid #dddddd;
+  align-self: center;
+  text-align: center;
+}
+.searchfieldTitle h2 {
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  top: 2rem;
+}
+.searchfieldTitle .search-bar-content {
+  width: 100%;
+  position: relative;
+  top: 3rem;
+}
+.searchfieldTitle .search-bar-content input {
+  width: 60rem;
+  height: 3.5rem;
+  background-image: url("/support-images/searchbutton.png");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  border: 1px solid #c5c1c1;
+  background-position: 0.5rem;
+  border-radius: 2px;
+}
+.searchfieldTitle .search-bar-content input::-moz-placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  position: relative;
+  left: 4rem;
+  top: 0.2rem;
+}
+.searchfieldTitle .search-bar-content input:-ms-input-placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  position: relative;
+  left: 4rem;
+  top: 0.2rem;
+}
+.searchfieldTitle .search-bar-content input::placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  position: relative;
+  left: 4rem;
+  top: 0.2rem;
+}
+
+.third-row {
+  width: 100%;
+  height: 21rem;
+  display: flex;
+  justify-content: center;
+}
+.third-row .third-row-content {
+  width: 60rem;
+  height: auto;
+  width: 60rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.third-row .third-row-content .updateIOS {
+  width: 50%;
+  background-image: url("/support-images/featured-section-update-ios-promo_2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 29rem;
+  align-items: flex-start;
+}
+.third-row .third-row-content .updateIOScontent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.third-row .third-row-content .updateIOScontent .headerUpdateIOS {
+  width: auto;
+  height: 20%;
+  width: auto;
+  height: 20%;
+}
+.third-row .third-row-content .updateIOScontent .headerUpdateIOS h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.third-row .third-row-content .updateIOScontent .pContent {
+  width: auto;
+  height: 40%;
+}
+.third-row .third-row-content .updateIOScontent .pContent p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.third-row .third-row-content .updateIOScontent .aLinkContent {
+  width: auto;
+  height: 20%;
+}
+.third-row .third-row-content .updateIOScontent .aLinkContent a {
+  text-decoration: none;
+  color: #0070c9;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 300;
+  position: relative;
+  bottom: 10px;
+}
+.third-row .third-row-content .updateIOScontent .aLinkContent a:hover {
   text-decoration: underline;
 }
 

@@ -1,13 +1,15 @@
 main {
   border: 1px solid black;
   @include size (100%, auto);
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
+
 .top-wrapper {
   @include background-image(url("/support-images/psp-hero-banner-homepage-welcome.image.large_2x.jpg"));
-  height: 55vh;
+  height: 50vh;
 
   #header-on-wrapper {
     text-align: center;
@@ -23,7 +25,7 @@ main {
   @include size (100%, 10rem);
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
 
   .smallboxes {
     @include size (10rem, 100%);
@@ -32,7 +34,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
 
 
     #support-content-image {
@@ -49,6 +50,164 @@ main {
       }
     }
   }
+}
+
+.second-row {
+  width: 100%;
+  height: auto;
+  @include size (100%, 12rem);
+  border-top: 1px solid #dddddd;
+  @include flex (row, center, center, wrap);
+
+
+  .second-row-promotion {
+    width: 70rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .promotion-box {
+      display: flex;
+      flex-direction: column;
+
+      .promotion-images {
+        @include size (3rem, 3rem);
+        align-self: center;
+      }
+
+      a {
+        position: relative;
+        top: 1rem;
+        text-decoration: none;
+        color: #0070c9;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .vertical-line {
+      @include size (1px, 7rem);
+      align-self: center;
+      background-color: #dddddd;
+    }
+  }
+
+}
+
+.searchfieldTitle {
+  position: relative;
+
+  @include size (100%, 12rem);
+  border: 1px solid #dddddd;
+  align-self: center;
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top: 2rem;
+
+  }
+
+  .search-bar-content {
+    width: 100%;
+    position: relative;
+    top: 3rem;
+
+    input {
+      @include size (60rem, 3.5rem);
+      background-image: url("/support-images/searchbutton.png");
+      background-size: 2rem;
+      background-repeat: no-repeat;
+      border: 1px solid #c5c1c1;
+      background-position: 0.5rem;
+      border-radius: 2px;
+
+    }
+
+    input::placeholder {
+      font-size: 25px;
+      font-weight: 300;
+      position: relative;
+      left: 4rem;
+      top: 0.2rem;
+    }
+  }
+
+}
+
+.third-row {
+  @include size (100%, 21rem);
+  display: flex;
+  justify-content: center;
+
+  .third-row-content {
+    @include size (60rem, auto);
+    width: 60rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    .updateIOS {
+      width: 50%;
+      background-image: url("/support-images/featured-section-update-ios-promo_2x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 29rem;
+      align-items: flex-start;
+    }
+
+    .updateIOScontent {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .headerUpdateIOS {
+        @include size (auto, 20%);
+        width: auto;
+        height: 20%;
+
+        h2 {
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+
+      .pContent {
+        @include size (auto, 40%);
+
+        p {
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 1.4;
+        }
+      }
+
+      .aLinkContent {
+        @include size (auto, 20%);
+
+        a {
+          text-decoration: none;
+          color: #0070c9;
+          font-size: 22px;
+          line-height: 1.4;
+          font-weight: 300;
+          position: relative;
+          bottom: 10px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 .support-footer {
