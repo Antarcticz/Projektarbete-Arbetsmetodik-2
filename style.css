@@ -1744,4 +1744,138 @@ body {
 }
 .seven-row .seven-row-content .seven-box .seven-row-link a:hover {
   text-decoration: underline;
+}
+
+.eight-row {
+  width: 100%;
+  height: 16.7rem;
+  border: 1px solid #c5c1c1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+}
+.eight-row .eight-content {
+  width: 60rem;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.eight-row .eight-content .eight-header {
+  width: 100%;
+  height: 4rem;
+}
+.eight-row .eight-content .eight-header h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  padding: 12px;
+}
+.eight-row .eight-content .eight-text {
+  width: 100%;
+  height: 6rem;
+}
+.eight-row .eight-content .eight-text p {
+  font-size: 18.5px;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  line-height: 1.4;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.eight-row .eight-content .eight-text-two {
+  width: 100%;
+  height: auto;
+}
+.eight-row .eight-content .eight-text-two p {
+  font-size: 18.5px;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  line-height: 1.4;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+.ninth-row {
+  width: 100%;
+  height: 20.7rem;
+  border: 1px solid #c5c1c1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+}
+.ninth-row .eight-content {
+  width: 60rem;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.ninth-row .eight-content .eight-header {
+  width: 100%;
+  height: 4rem;
+}
+.ninth-row .eight-content .eight-header h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  padding: 12px;
+}
+.ninth-row .eight-content .eight-text {
+  width: 100%;
+  height: 6rem;
+}
+.ninth-row .eight-content .eight-text p {
+  font-size: 18.5px;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  line-height: 1.4;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.ninth-row .eight-content .eight-text-two {
+  width: 100%;
+  height: auto;
+}
+.ninth-row .eight-content .eight-text-two p {
+  font-size: 18.5px;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  line-height: 1.4;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }/*# sourceMappingURL=style.css.map */
