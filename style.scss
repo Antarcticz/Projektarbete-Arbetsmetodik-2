@@ -20,3 +20,73 @@ body {
     width: auto;
     height: auto;
 }
+
+.seven-row {
+    @include size (100%, 21.7rem);
+    border: 1px solid #c5c1c1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .seven-row-content {
+        @include size (60rem, 100%);
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+
+        .seven-box-image {
+            @include size (50%, 100%);
+            background-image: url("/support-images/featured-section-my-support_2x.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 29rem;
+            align-items: flex-start;
+        }
+
+        .seven-box {
+            @include size (50%, 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .seven-row-header {
+                @include size (100%, 5rem);
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .seven-row-text {
+                @include size (100%, 7rem);
+
+                p {
+                    font-size: 22px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                }
+            }
+
+            .seven-row-link {
+                @include size (auto, 4rem);
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    color: #0070c9;
+                    font-size: 22px;
+                    line-height: 1.4;
+                    font-weight: 300;
+                    position: relative;
+                    bottom: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1678,4 +1678,70 @@ body {
   background-color: #f5f5f7;
   width: auto;
   height: auto;
+}
+
+.seven-row {
+  width: 100%;
+  height: 21.7rem;
+  border: 1px solid #c5c1c1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.seven-row .seven-row-content {
+  width: 60rem;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+.seven-row .seven-row-content .seven-box-image {
+  width: 50%;
+  height: 100%;
+  background-image: url("/support-images/featured-section-my-support_2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 29rem;
+  align-items: flex-start;
+}
+.seven-row .seven-row-content .seven-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.seven-row .seven-row-content .seven-box .seven-row-header {
+  width: 100%;
+  height: 5rem;
+}
+.seven-row .seven-row-content .seven-box .seven-row-header h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.seven-row .seven-row-content .seven-box .seven-row-text {
+  width: 100%;
+  height: 7rem;
+}
+.seven-row .seven-row-content .seven-box .seven-row-text p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.seven-row .seven-row-content .seven-box .seven-row-link {
+  width: auto;
+  height: 4rem;
+  display: flex;
+}
+.seven-row .seven-row-content .seven-box .seven-row-link a {
+  text-decoration: none;
+  color: #0070c9;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 300;
+  position: relative;
+  bottom: 10px;
+}
+.seven-row .seven-row-content .seven-box .seven-row-link a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
