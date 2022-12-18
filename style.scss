@@ -20,3 +20,198 @@ body {
     width: auto;
     height: auto;
 }
+
+.fourth-row {
+    @include size (100%, 45vh);
+    @include background-image(url("/support-images/psp-hero-banner-homepage-getsupport.image.large_2x.jpg"));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .fourth-row-part {
+        @include size (50%, 50%);
+
+        .fourth-row-content {
+            text-align: center;
+            @include size (100%, 5rem);
+
+            h2 {
+                font-size: 40px;
+                color: white;
+                font-weight: 400;
+
+            }
+        }
+
+        .ptagContent {
+            text-align: center;
+            @include size (100%, 5rem);
+
+            p {
+                font-size: 20px;
+                color: white;
+                font-weight: 400;
+
+            }
+        }
+
+        .atagContent {
+            text-align: center;
+            @include size (100%, 3rem);
+
+            a {
+                font-size: 20px;
+                color: #66bbff;
+                font-weight: 400;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+
+            }
+        }
+    }
+}
+
+.fifth-row {
+    @include size (100%, 20.7rem);
+    display: flex;
+    justify-content: center;
+
+    .fifth-row-content {
+        @include size (60rem, 15.2rem);
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+
+        .fifth-box {
+            @include size (50%, 100%);
+
+            .fifth-row-header {
+                @include size (100%, 4rem);
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .fifth-row-text {
+                @include size (100%, 8rem);
+
+                p {
+                    font-size: 22px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                }
+            }
+
+            .fifth-row-link {
+                @include size (auto, 20%);
+
+                a {
+                    text-decoration: none;
+                    color: #0070c9;
+                    font-size: 22px;
+                    line-height: 1.4;
+                    font-weight: 300;
+                    position: relative;
+                    bottom: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+
+        .fifth-box-image {
+            @include size (50%, 100%);
+            background-image: url("/support-images/featured-section-give-back-trade-in_2x.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 29rem;
+            align-items: flex-start;
+        }
+    }
+}
+
+.sixth-row {
+    @include size (100%, 21.7rem);
+    border: 1px solid #c5c1c1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .sixth-row-content {
+        @include size (60rem, 23rem);
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+
+        .sixth-box-image {
+            @include size (50%, 100%);
+            background-image: url("/support-images/featured-section-promo-accidents-happen_2x.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 29rem;
+            align-items: flex-start;
+        }
+
+        .sixth-box {
+            @include size (50%, 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .sixth-box-down {
+                @include size (auto, 85%);
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            .sixth-row-header {
+                @include size (100%, 18rem);
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .sixth-row-text {
+                @include size (100%, 22rem);
+
+                p {
+                    font-size: 22px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                }
+            }
+
+            .sixth-row-link {
+                @include size (auto, 20%);
+
+                a {
+                    text-decoration: none;
+                    color: #0070c9;
+                    font-size: 22px;
+                    line-height: 1.4;
+                    font-weight: 300;
+                    position: relative;
+                    bottom: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
