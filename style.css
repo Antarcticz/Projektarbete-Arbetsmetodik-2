@@ -1812,6 +1812,9 @@ body {
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
 }
+.eight-row .eight-content .eight-text-two p a {
+  color: #0070c9;
+}
 
 .ninth-row {
   width: 100%;
@@ -1859,6 +1862,9 @@ body {
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
+}
+.ninth-row .eight-content .eight-text p a {
+  color: #0070c9;
 }
 .ninth-row .eight-content .eight-text-two {
   width: 100%;
