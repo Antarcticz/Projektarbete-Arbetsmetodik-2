@@ -21,211 +21,80 @@ body {
     height: auto;
 }
 
-.seven-row {
-    @include size (100%, 21.7rem);
+.warning-row {
+    @include size (100%, 17.7rem);
     border: 1px solid #c5c1c1;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 
-    .seven-row-content {
+    .warning-middle-box {
         @include size (60rem, 100%);
-        align-self: center;
         display: flex;
         flex-direction: row;
 
-        .seven-box-image {
+        .content-image-warning {
             @include size (50%, 100%);
-            background-image: url("/support-images/featured-section-my-support_2x.jpg");
+            background-image: url("/support-images/apple-gift-card-trimmed_2x.jpg");
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 29rem;
+            background-size: 16rem;
             align-items: flex-start;
         }
 
-        .seven-box {
+        .content-warning {
             @include size (50%, 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
 
-            .seven-row-header {
-                @include size (100%, 5rem);
-
-                h2 {
-                    font-size: 40px;
-                    font-weight: 500;
-                }
-
+            h3 {
+                font-size: 2.2rem;
+                font-weight: 400;
+                padding-top: 57px;
             }
 
-            .seven-row-text {
-                @include size (100%, 7rem);
+            a {
+                text-decoration: none;
+                color: #0070c9;
+                font-size: 20px;
+                line-height: 1.4;
+                font-weight: 300;
+                position: relative;
+                top: 18px;
 
-                p {
-                    font-size: 22px;
-                    font-weight: 300;
-                    line-height: 1.4;
-                }
-            }
-
-            .seven-row-link {
-                @include size (auto, 4rem);
-                display: flex;
-
-                a {
-                    text-decoration: none;
-                    color: #0070c9;
-                    font-size: 22px;
-                    line-height: 1.4;
-                    font-weight: 300;
-                    position: relative;
-                    bottom: 10px;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                &:hover {
+                    text-decoration: underline;
                 }
             }
         }
     }
 }
 
-
-.eight-row {
-    @include size (100%, 16.7rem);
-    border: 1px solid #c5c1c1;
+.apple-service {
+    @include size (100%, 25.7rem);
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding: 25px;
 
-    .eight-content {
-        @include size (60rem, 100%);
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .apple-service-content {
+        @include size (45rem, auto);
+        padding-top: 40px;
 
-        .eight-header {
-            width: 100%;
-            height: 4rem;
-
-            h3 {
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 1.2;
-                letter-spacing: .015em;
-                padding: 12px;
-            }
-
+        h3 {
+            font-size: 27px;
+            font-weight: 400;
+            padding: 10px;
         }
 
-        .eight-text {
-            width: 100%;
-            height: 6rem;
+        ul li {
+            list-style: none;
+            padding: 10px;
 
-            p {
-                font-size: 18.5px;
+            a {
+                text-decoration: none;
+                color: #0070c9;
+                font-size: 19px;
                 font-weight: 300;
-                letter-spacing: .015em;
-                line-height: 1.4;
-                display: block;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-            }
-        }
 
-        .eight-text-two {
-            width: 100%;
-            height: auto;
-
-            p {
-                font-size: 18.5px;
-                font-weight: 300;
-                letter-spacing: .015em;
-                line-height: 1.4;
-                display: block;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-
-                a {
-                    color: #0070c9;
+                &:hover {
+                    text-decoration: underline;
                 }
-            }
-        }
-    }
-}
-
-.ninth-row {
-    @include size (100%, 20.7rem);
-    border: 1px solid #c5c1c1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 25px;
-
-    .eight-content {
-        @include size (60rem, 100%);
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-        .eight-header {
-            width: 100%;
-            height: 4rem;
-
-            h3 {
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 1.2;
-                letter-spacing: .015em;
-                padding: 12px;
-            }
-
-        }
-
-        .eight-text {
-            width: 100%;
-            height: 6rem;
-
-            p {
-                font-size: 18.5px;
-                font-weight: 300;
-                letter-spacing: .015em;
-                line-height: 1.4;
-                display: block;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-
-                a {
-                    color: #0070c9;
-                }
-            }
-        }
-
-        .eight-text-two {
-            width: 100%;
-            height: auto;
-
-            p {
-                font-size: 18.5px;
-                font-weight: 300;
-                letter-spacing: .015em;
-                line-height: 1.4;
-                display: block;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-
             }
         }
     }
