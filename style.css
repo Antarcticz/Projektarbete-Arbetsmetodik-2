@@ -820,7 +820,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   opacity: 0%;
   transition-duration: 0.5s;
 }
-.store-section-2 .swiper-button-next:hover, .store-section-2 .swiper-button-prev:hover {
+.store-section-2 .swiper:hover .swiper-button-next, .store-section-2 .swiper:hover .swiper-button-prev {
   opacity: 100%;
   transition-duration: 0.5s;
 }
@@ -1057,7 +1057,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   opacity: 0%;
   transition-duration: 0.5s;
 }
-.store-section-5 .swiper-button-next:hover, .store-section-5 .swiper-button-prev:hover, .store-section-6 .swiper-button-next:hover, .store-section-6 .swiper-button-prev:hover {
+.store-section-5 .swiper:hover .swiper-button-next, .store-section-5 .swiper:hover .swiper-button-prev, .store-section-6 .swiper:hover .swiper-button-next, .store-section-6 .swiper:hover .swiper-button-prev {
   opacity: 100%;
   transition-duration: 0.5s;
 }
