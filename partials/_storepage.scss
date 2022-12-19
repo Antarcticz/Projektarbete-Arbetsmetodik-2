@@ -469,3 +469,148 @@
 .hidden {
     visibility: hidden;
 }
+// --------------------------------------------Section 5---------------------------------------------------
+.store-header-wrapper5 {
+    @include flex(row, center, center, nowrap);
+    margin-right: 16.5%;
+    margin-top: 10vh;
+    background-color: #f5f5f7;
+
+    .header-h3 {
+        @include text-size(1.6rem, 600, left);
+        color: #1D1D1F;
+    }
+
+    .header-span {
+        @include text-size(1.6rem, 600, left);
+        color: #6E6E73;
+    }
+}
+
+.store-section-5 {
+    @include flex(row, center, center, nowrap);
+    width: 100%;
+
+    .container5 {
+        @include size(100%, 58vh);
+    }
+
+    .swiper-slide {
+        @include size(400px, 500px);
+        margin: auto;
+        
+    }
+
+    .card-content5 {
+        @include size(400px, 500px);
+    }
+
+    .card5 {
+        @include flex(row, center, center, nowrap);
+
+        @media screen and (max-width: 1820px) {
+            margin-left: 6rem;
+        }
+    }
+
+    .image5 {
+        @include size(399.99px, 499.99px);
+        transition-duration: 0.5s;
+        border-radius: 1rem;
+        box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
+        cursor: pointer;
+
+    }
+    .image5:hover {
+        @include size(403px, 503px);
+        transition-duration: 0.5s;
+        box-shadow: -1px 1px 10px 2px #00000030;
+
+    }
+    img {
+        @include size(100%, 100%);
+        object-fit: cover;
+        border-radius: 1rem;
+
+    }
+
+    .thin-image5 {
+        @include flex(row, center, center, nowrap);
+        @include size(312.99px, 499.99px);
+        transition-duration: 0.5s;
+        border-radius: 1rem;
+        box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
+        background-color: #fff;
+        cursor: pointer;
+
+    }
+    .thin-image5:hover {
+        @include size(316px, 503px);
+        transition-duration: 0.5s;
+        box-shadow: -1px 1px 10px 2px #00000030;
+
+    }
+
+    .small-img {
+        @include size(230px, 230px);
+        object-fit: cover;
+        margin-bottom: 8rem;
+        transition-duration: 0.5s;
+        // border: 1px solid blue;
+    }
+    .small-img:hover {
+        @include size(234px, 234px);
+        transition-duration: 0.5s;
+    }
+
+    .circle-color5 {
+        @include flex(row, center, center, nowrap);
+        @include size(232px, 20px);
+        position: relative;
+        bottom: 11rem;
+        left: 2.5rem;
+
+        img {
+            @include size (12px, 12px);
+            margin: 3px;
+        }
+    }
+    .card-text5 {
+        position: relative;
+        bottom: 29.5rem;
+        left: 1.5rem;
+    }
+    .card-small-text5 {
+        position: relative;
+        bottom: 10rem;
+        left: 1.5rem;
+        width:252px;
+    }
+
+    .card-text-white-color5 {
+        h3 {
+            color: #F5F5F7;
+        }
+
+        p, span {
+            color: #fff;
+        }
+    }
+
+    h3 {
+        @include text-size(0.8rem, 400, left);
+        margin-bottom: 0.5rem;
+        color: #BF4800;
+    }
+
+    p {
+        @include text-size(1rem, 600, left);
+        margin-bottom: 2rem;
+        color: #1D1D1F;
+    }
+
+    span {
+        @include text-size(0.9rem, 400, left);
+        color: #1D1D1F;
+    }
+}
