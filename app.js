@@ -12,7 +12,7 @@ slide.forEach((s, i) => {
 })
 
 // Swiper JS    
-const swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4.5,
   spaceBetween: 1,
   slidesPerGroup: 1,
@@ -55,30 +55,19 @@ showSlides = (n) => {
 
 }
 
-document.addEventListener('click', e => {
-  let handle
-  if (e.target.matches(".handle")) {
-    handle = e.target
-  } else {
-    handle = e.target.closest(".handle")
-  }
-  if (handle != null) onHandleClick(handle)
+
+
+
+var swiper = new Swiper(".felix", {
+  slidesPerView: 5,
+  spaceBetween: 15,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
-
-onHandleClick = (handle) => {
-  let leftHandle = document.querySelector('left-handle');
-  const slider = handle.closest('.carousel-4-container').querySelector('.slider');
-  const sliderIndex = parseInt(getComputedStyle(slider).getPropertyValue('--slider-index'))
-  if (handle.classList.contains('left-handle')) {
-    slider.style.setProperty('--slider-index', sliderIndex - 1)
-  }
-  if (handle.classList.contains('right-handle')) {
-    slider.style.setProperty('--slider-index', sliderIndex + 1)
-  }
-
-  console.log(slider)
-}
-
-onHandleClick();
 
 
