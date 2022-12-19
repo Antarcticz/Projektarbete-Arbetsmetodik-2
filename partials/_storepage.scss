@@ -270,7 +270,7 @@
         opacity: 0%;
         transition-duration: 0.5s;
     }
-    .swiper-button-next:hover, .swiper-button-prev:hover {
+    .swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev {
         opacity: 100%;
         transition-duration: 0.5s;
     }
@@ -484,6 +484,7 @@
 
     .swiper-slide {
         @include size(400px, 500px);
+        // flex: 0 0 10%;
         margin: auto;
         
     }
@@ -496,7 +497,7 @@
         opacity: 0%;
         transition-duration: 0.5s;
     }
-    .swiper-button-next:hover, .swiper-button-prev:hover {
+    .swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev {
         opacity: 100%;
         transition-duration: 0.5s;
     }
