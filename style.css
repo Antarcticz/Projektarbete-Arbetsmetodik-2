@@ -934,6 +934,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex: 0 0 25%;
   cursor: pointer;
   box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
+  transition: 0.5s ease;
 }
 .store-section-4 .swiper-slide:hover {
   box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);

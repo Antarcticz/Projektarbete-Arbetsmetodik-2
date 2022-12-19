@@ -384,6 +384,7 @@
         flex: 0 0 25%;
         cursor: pointer;
         box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
+        transition: 0.5s ease;
       }
       .swiper-slide:hover {
         box-shadow: -1px 1px 10px 2px #00000030;
