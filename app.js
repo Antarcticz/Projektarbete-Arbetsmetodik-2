@@ -11,23 +11,38 @@ slide.forEach((s, i) => {
   })
 })
 
+// Swiper JS    
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4.5,
+  spaceBetween: 1,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 //Slidercontainer
+const slideIndex = 1;
+showSlides = (slideIndex);
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+plusSlides = (n) => {
+  showSlides = (slideIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+currentSlide = (n) => {
+  showSlides = (slideIndex = n);
 }
 
-function showSlides(n) {
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+showSlides = (n) => {
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
@@ -50,7 +65,7 @@ document.addEventListener('click', e => {
   if (handle != null) onHandleClick(handle)
 });
 
-function onHandleClick(handle) {
+onHandleClick = (handle) => {
   let leftHandle = document.querySelector('left-handle');
   const slider = handle.closest('.carousel-4-container').querySelector('.slider');
   const sliderIndex = parseInt(getComputedStyle(slider).getPropertyValue('--slider-index'))
@@ -66,20 +81,4 @@ function onHandleClick(handle) {
 
 onHandleClick();
 
-// Swiper JS    
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4.5,
-  spaceBetween: 1,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 
