@@ -938,6 +938,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 }
 .store-section-4 .swiper-slide:hover {
   box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
+  transform: scale(1.01);
 }
 .store-section-4 i {
   padding-bottom: 10px;
