@@ -343,12 +343,12 @@
 
     .container5 {
         @include size(100%, 58vh);
-
     }
 
     .swiper-slide {
         @include size(400px, 500px);
         margin: auto;
+        
     }
 
     .card-content5 {
@@ -405,16 +405,25 @@
         @include size(230px, 230px);
         object-fit: cover;
         margin-bottom: 8rem;
+        transition-duration: 0.5s;
         // border: 1px solid blue;
+    }
+    .small-img:hover {
+        @include size(234px, 234px);
+        transition-duration: 0.5s;
     }
 
     .circle-color5 {
         @include flex(row, center, center, nowrap);
-        @include size(12px, 12px);
+        @include size(232px, 20px);
         position: relative;
         bottom: 11rem;
-        left: 9rem;
-        // border: 1px solid green;
+        left: 2.5rem;
+
+        img {
+            @include size (12px, 12px);
+            margin: 3px;
+        }
     }
     .card-text5 {
         position: relative;
@@ -434,8 +443,7 @@
             color: #F5F5F7;
         }
 
-        p,
-        span {
+        p, span {
             color: #fff;
         }
     }

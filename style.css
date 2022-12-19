@@ -977,6 +977,12 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 8rem;
+  transition-duration: 0.5s;
+}
+.store-section-5 .small-img:hover {
+  width: 234px;
+  height: 234px;
+  transition-duration: 0.5s;
 }
 .store-section-5 .circle-color5 {
   display: flex;
@@ -984,11 +990,16 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 12px;
-  height: 12px;
+  width: 232px;
+  height: 20px;
   position: relative;
   bottom: 11rem;
-  left: 9rem;
+  left: 2.5rem;
+}
+.store-section-5 .circle-color5 img {
+  width: 12px;
+  height: 12px;
+  margin: 3px;
 }
 .store-section-5 .card-text5 {
   position: relative;
@@ -1004,8 +1015,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 .store-section-5 .card-text-white-color5 h3 {
   color: #F5F5F7;
 }
-.store-section-5 .card-text-white-color5 p,
-.store-section-5 .card-text-white-color5 span {
+.store-section-5 .card-text-white-color5 p, .store-section-5 .card-text-white-color5 span {
   color: #fff;
 }
 .store-section-5 h3 {
