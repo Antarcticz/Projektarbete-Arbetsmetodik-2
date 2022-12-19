@@ -11,10 +11,26 @@ slide.forEach((s, i) => {
   })
 })
 
+// Swiper JS    
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4.5,
+  spaceBetween: 1,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 
 //Slidercontainer
-
-var slideIndex = 1;
+const slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -66,19 +82,4 @@ function onHandleClick(handle) {
 
 onHandleClick();
 
-// Swiper JS    
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4.5,
-  spaceBetween: 1,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+
