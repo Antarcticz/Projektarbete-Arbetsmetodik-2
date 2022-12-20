@@ -300,6 +300,7 @@ main .cards-content {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
+  padding-top: 1rem;
 }
 main .cards-content i {
   font-size: 10px;
