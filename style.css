@@ -610,8 +610,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
           animation: 1s slide-right;
 }
 
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -629,8 +628,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   margin-left: 10rem;
 }
 @media screen and (max-width: 800px) {
-  .prev,
-.next {
+  .prev, .next {
     margin-left: auto;
   }
 }
@@ -660,6 +658,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   height: 30.5rem;
   display: flex;
   justify-content: space-between;
+  padding-top: 6rem;
 }
 @media screen and (min-width: 800px) {
   .upper-in-section-1 {
@@ -693,6 +692,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-direction: column;
   justify-content: center;
   align-self: center;
+  padding-top: 3.5rem;
 }
 .upper-in-section-1 .help-section-1 .first-help-1 {
   width: 16rem;
@@ -779,10 +779,6 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 .bottom-section-1 .card {
   width: 12rem;
 }
-.bottom-section-1 .swiper-slide:hover {
-  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
-  transform: scale(1.01);
-}
 .bottom-section-1 p {
   font-size: 1rem;
   text-align: center;
@@ -795,8 +791,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   width: 100%;
   height: 100%;
 }
-.bottom-section-1 .swiper-button-prev,
-.bottom-section-1 .swiper-button-next {
+.bottom-section-1 .swiper-button-prev, .bottom-section-1 .swiper-button-next {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4235294118);
   padding: 2rem;
@@ -804,146 +799,8 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   opacity: 0;
   transition-duration: 0.5s;
 }
-.bottom-section-1 .swiper:hover .swiper-button-next,
-.bottom-section-1 .swiper:hover .swiper-button-prev {
+.bottom-section-1 .swiper:hover .swiper-button-next, .bottom-section-1 .swiper:hover .swiper-button-prev {
   opacity: 1;
-}
-
-.store-section-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-.store-section-3 .container {
-  width: 100%;
-  height: 58vh;
-}
-.store-section-3 .swiper-slide {
-  width: 400px;
-  height: 500px;
-  margin: auto;
-}
-.store-section-3 .swiper-button-next,
-.store-section-3 .swiper-button-prev {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.2509803922);
-  padding: 2rem;
-  border-radius: 50%;
-  opacity: 0%;
-  transition-duration: 0.5s;
-}
-.store-section-3 .swiper:hover .swiper-button-next,
-.store-section-3 .swiper:hover .swiper-button-prev {
-  opacity: 100%;
-  transition-duration: 0.5s;
-}
-.store-section-3 .card-content {
-  width: 400px;
-  height: 500px;
-}
-.store-section-3 .card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-@media screen and (max-width: 1820px) {
-  .store-section-3 .card {
-    margin-left: 6rem;
-  }
-}
-.store-section-3 .wider-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.store-section-3 .image {
-  width: 459.99px;
-  height: 499.99px;
-  transition-duration: 0.5s;
-  border-radius: 1rem;
-  box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
-  margin: auto;
-  cursor: pointer;
-}
-.store-section-3 .image:hover {
-  width: 510px;
-  height: 510px;
-  transition-duration: 0.5s;
-  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
-}
-.store-section-3 .image-small {
-  width: 399.99px;
-  height: 499.99px;
-  transition-duration: 0.5s;
-  border-radius: 1rem;
-  box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
-  cursor: pointer;
-}
-.store-section-3 .image-small:hover {
-  width: 403px;
-  height: 503px;
-  transition-duration: 0.5s;
-  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
-}
-.store-section-3 img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1rem;
-}
-.store-section-3 .card-text {
-  position: relative;
-  bottom: 29.5rem;
-  left: 1.5rem;
-}
-.store-section-3 .card-text-white-color h3 {
-  color: #F5F5F7;
-}
-.store-section-3 .card-text-white-color p,
-.store-section-3 .card-text-white-color span {
-  color: #fff;
-}
-.store-section-3 h3 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  text-align: left;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-}
-.store-section-3 p {
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-align: left;
-  margin-bottom: 0.5rem;
-  color: #fbfbff;
-}
-.store-section-3 span {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
-}
-.store-section-3 #grey-color {
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-align: left;
-  margin-bottom: 0.5rem;
-  color: #39393b;
-}
-.store-section-3 #black-color {
-  font-size: 1.7rem;
-  font-weight: 600;
-  text-align: left;
-  margin-bottom: 0.5rem;
-  color: #000000;
 }
 
 .store-header-wrapper2 {
@@ -992,8 +849,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   color: #6E6E73;
 }
 
-.store-section-2,
-.store-section-8 {
+.store-section-2, .store-section-8 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1001,21 +857,16 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-wrap: nowrap;
   width: 100%;
 }
-.store-section-2 .container,
-.store-section-8 .container {
+.store-section-2 .container, .store-section-8 .container {
   width: 100%;
   height: 58vh;
 }
-.store-section-2 .swiper-slide,
-.store-section-8 .swiper-slide {
+.store-section-2 .swiper-slide, .store-section-8 .swiper-slide {
   width: 400px;
   height: 500px;
   margin: auto;
 }
-.store-section-2 .swiper-button-next,
-.store-section-2 .swiper-button-prev,
-.store-section-8 .swiper-button-next,
-.store-section-8 .swiper-button-prev {
+.store-section-2 .swiper-button-next, .store-section-2 .swiper-button-prev, .store-section-8 .swiper-button-next, .store-section-8 .swiper-button-prev {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2509803922);
   padding: 2rem;
@@ -1023,26 +874,18 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   opacity: 0%;
   transition-duration: 0.5s;
 }
-.store-section-2 .swiper-button-next:active,
-.store-section-2 .swiper-button-prev:active,
-.store-section-8 .swiper-button-next:active,
-.store-section-8 .swiper-button-prev:active {
+.store-section-2 .swiper-button-next:active, .store-section-2 .swiper-button-prev:active, .store-section-8 .swiper-button-next:active, .store-section-8 .swiper-button-prev:active {
   background-color: hsla(0deg, 0%, 0%, 0.351);
 }
-.store-section-2 .swiper:hover .swiper-button-next,
-.store-section-2 .swiper:hover .swiper-button-prev,
-.store-section-8 .swiper:hover .swiper-button-next,
-.store-section-8 .swiper:hover .swiper-button-prev {
+.store-section-2 .swiper:hover .swiper-button-next, .store-section-2 .swiper:hover .swiper-button-prev, .store-section-8 .swiper:hover .swiper-button-next, .store-section-8 .swiper:hover .swiper-button-prev {
   opacity: 100%;
   transition-duration: 0.5s;
 }
-.store-section-2 .card-content,
-.store-section-8 .card-content {
+.store-section-2 .card-content, .store-section-8 .card-content {
   width: 400px;
   height: 500px;
 }
-.store-section-2 .card,
-.store-section-8 .card {
+.store-section-2 .card, .store-section-8 .card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1050,13 +893,11 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-wrap: nowrap;
 }
 @media screen and (max-width: 1820px) {
-  .store-section-2 .card,
-.store-section-8 .card {
+  .store-section-2 .card, .store-section-8 .card {
     margin-left: 6rem;
   }
 }
-.store-section-2 .image,
-.store-section-8 .image {
+.store-section-2 .image, .store-section-8 .image {
   width: 399.99px;
   height: 499.99px;
   transition-duration: 0.5s;
@@ -1064,67 +905,166 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
   cursor: pointer;
 }
-.store-section-2 .image:hover,
-.store-section-8 .image:hover {
+.store-section-2 .image:hover, .store-section-8 .image:hover {
   width: 403px;
   height: 503px;
   transition-duration: 0.5s;
   box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
 }
-.store-section-2 img,
-.store-section-8 img {
+.store-section-2 img, .store-section-8 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
 }
-.store-section-2 .card-text,
-.store-section-8 .card-text {
+.store-section-2 .card-text, .store-section-8 .card-text {
   position: relative;
   bottom: 29.5rem;
   left: 1.5rem;
 }
-.store-section-2 .card-text-white-color h3,
-.store-section-8 .card-text-white-color h3 {
+.store-section-2 .card-text-white-color h3, .store-section-8 .card-text-white-color h3 {
   color: #F5F5F7;
 }
-.store-section-2 .card-text-white-color p,
-.store-section-2 .card-text-white-color span,
-.store-section-8 .card-text-white-color p,
-.store-section-8 .card-text-white-color span {
+.store-section-2 .card-text-white-color p, .store-section-2 .card-text-white-color span, .store-section-8 .card-text-white-color p, .store-section-8 .card-text-white-color span {
   color: #fff;
 }
-.store-section-2 .card-text-white-color2 h3,
-.store-section-8 .card-text-white-color2 h3 {
+.store-section-2 .card-text-white-color2 h3, .store-section-8 .card-text-white-color2 h3 {
   color: #86868B;
 }
-.store-section-2 .card-text-white-color2 p,
-.store-section-8 .card-text-white-color2 p {
+.store-section-2 .card-text-white-color2 p, .store-section-8 .card-text-white-color2 p {
   color: #fff;
 }
-.store-section-2 h3,
-.store-section-8 h3 {
+.store-section-2 h3, .store-section-8 h3 {
   font-size: 0.7rem;
   font-weight: 600;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #6E6E73;
 }
-.store-section-2 p,
-.store-section-8 p {
+.store-section-2 p, .store-section-8 p {
   font-size: 1.7rem;
   font-weight: 500;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #1D1D1F;
 }
-.store-section-2 span,
-.store-section-8 span {
+.store-section-2 span, .store-section-8 span {
   font-size: 1rem;
   font-weight: 400;
   text-align: left;
   color: #1D1D1F;
+}
+
+.store-section-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.store-section-3 .container3 {
+  width: 100%;
+  height: 58vh;
+}
+.store-section-3 .swiper-slide {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+}
+.store-section-3 .swiper-button-next, .store-section-3 .swiper-button-prev {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  padding: 2rem;
+  border-radius: 50%;
+  opacity: 0%;
+  transition-duration: 0.5s;
+}
+.store-section-3 .swiper-button-next:active, .store-section-3 .swiper-button-prev:active {
+  background-color: hsla(0deg, 0%, 0%, 0.351);
+}
+.store-section-3 .swiper:hover .swiper-button-next, .store-section-3 .swiper:hover .swiper-button-prev {
+  opacity: 100%;
+  transition-duration: 0.5s;
+}
+.store-section-3 .card-content3 {
+  width: 400px;
+  height: 500px;
+}
+.store-section-3 .card3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 1820px) {
+  .store-section-3 .card3 {
+    margin-left: 6rem;
+  }
+}
+.store-section-3 .image3 {
+  width: 484.78px;
+  height: 499.99px;
+  transition-duration: 0.5s;
+  border-radius: 1rem;
+  box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
+  margin: auto;
+  cursor: pointer;
+}
+.store-section-3 .image3:hover {
+  width: 488.78px;
+  height: 503px;
+  transition-duration: 0.5s;
+  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
+}
+.store-section-3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.store-section-3 .card-text3 {
+  position: relative;
+  bottom: 29.5rem;
+  left: 1.5rem;
+}
+.store-section-3 h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+.store-section-3 p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #fbfbff;
+}
+.store-section-3 span {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+.store-section-3 #grey-color {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #39393b;
+}
+.store-section-3 #black-color {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #000000;
 }
 
 .store-section4-header {
@@ -1146,6 +1086,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 .store-section-4 {
   width: 100%;
   position: relative;
+  padding-top: 6rem;
 }
 .store-section-4 .swiper-wrapper {
   width: 80%;
@@ -1184,24 +1125,19 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
 .store-section-4 span {
   opacity: 0.9;
 }
-.store-section-4 span.green,
-.store-section-4 .fa-truck-arrow-right,
-.store-section-4 .fa-credit-card {
+.store-section-4 span.green, .store-section-4 .fa-truck-arrow-right, .store-section-4 .fa-credit-card {
   color: #68cc45;
   opacity: 0.9;
 }
-.store-section-4 span.red,
-.store-section-4 .fa-box {
+.store-section-4 span.red, .store-section-4 .fa-box {
   color: #ff0053;
   opacity: 0.9;
 }
-.store-section-4 span.purple,
-.store-section-4 .fa-laptop-code {
+.store-section-4 span.purple, .store-section-4 .fa-laptop-code {
   color: #ac39ff;
   opacity: 0.9;
 }
-.store-section-4 span.linear,
-.store-section-4 .fa-apple {
+.store-section-4 span.linear, .store-section-4 .fa-apple {
   background-image: linear-gradient(to right, #f8ab5e 0, #f36961 20%, #a176c8 40%, #759beb 60%, #65beb3 80%, #70db96 100%);
   color: transparent;
   background-clip: text;
@@ -1213,8 +1149,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   width: 100%;
   height: 100%;
 }
-.store-section-4 .swiper-button-prev,
-.store-section-4 .swiper-button-next {
+.store-section-4 .swiper-button-prev, .store-section-4 .swiper-button-next {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2509803922);
   padding: 2rem;
@@ -1222,12 +1157,10 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   opacity: 0;
   transition-duration: 0.5s;
 }
-.store-section-4 .swiper-button-next:active,
-.store-section-4 .swiper-button-prev:active {
+.store-section-4 .swiper-button-next:active, .store-section-4 .swiper-button-prev:active {
   background-color: hsla(0deg, 0%, 0%, 0.351);
 }
-.store-section-4 .swiper:hover .swiper-button-next,
-.store-section-4 .swiper:hover .swiper-button-prev {
+.store-section-4 .swiper:hover .swiper-button-next, .store-section-4 .swiper:hover .swiper-button-prev {
   opacity: 1;
 }
 
@@ -1277,8 +1210,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   color: #6E6E73;
 }
 
-.store-section-5,
-.store-section-6 {
+.store-section-5, .store-section-6 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1286,21 +1218,16 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-wrap: nowrap;
   width: 100%;
 }
-.store-section-5 .container5,
-.store-section-6 .container5 {
+.store-section-5 .container5, .store-section-6 .container5 {
   width: 100%;
   height: 58vh;
 }
-.store-section-5 .swiper-slide,
-.store-section-6 .swiper-slide {
+.store-section-5 .swiper-slide, .store-section-6 .swiper-slide {
   width: 400px;
   height: 500px;
   margin: auto;
 }
-.store-section-5 .swiper-button-next,
-.store-section-5 .swiper-button-prev,
-.store-section-6 .swiper-button-next,
-.store-section-6 .swiper-button-prev {
+.store-section-5 .swiper-button-next, .store-section-5 .swiper-button-prev, .store-section-6 .swiper-button-next, .store-section-6 .swiper-button-prev {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2509803922);
   padding: 2rem;
@@ -1308,26 +1235,18 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   opacity: 0%;
   transition-duration: 0.5s;
 }
-.store-section-5 .swiper-button-next:active,
-.store-section-5 .swiper-button-prev:active,
-.store-section-6 .swiper-button-next:active,
-.store-section-6 .swiper-button-prev:active {
+.store-section-5 .swiper-button-next:active, .store-section-5 .swiper-button-prev:active, .store-section-6 .swiper-button-next:active, .store-section-6 .swiper-button-prev:active {
   background-color: hsla(0deg, 0%, 0%, 0.351);
 }
-.store-section-5 .swiper:hover .swiper-button-next,
-.store-section-5 .swiper:hover .swiper-button-prev,
-.store-section-6 .swiper:hover .swiper-button-next,
-.store-section-6 .swiper:hover .swiper-button-prev {
+.store-section-5 .swiper:hover .swiper-button-next, .store-section-5 .swiper:hover .swiper-button-prev, .store-section-6 .swiper:hover .swiper-button-next, .store-section-6 .swiper:hover .swiper-button-prev {
   opacity: 100%;
   transition-duration: 0.5s;
 }
-.store-section-5 .card-content5,
-.store-section-6 .card-content5 {
+.store-section-5 .card-content5, .store-section-6 .card-content5 {
   width: 400px;
   height: 500px;
 }
-.store-section-5 .card5,
-.store-section-6 .card5 {
+.store-section-5 .card5, .store-section-6 .card5 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1335,13 +1254,11 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   flex-wrap: nowrap;
 }
 @media screen and (max-width: 1820px) {
-  .store-section-5 .card5,
-.store-section-6 .card5 {
+  .store-section-5 .card5, .store-section-6 .card5 {
     margin-left: 6rem;
   }
 }
-.store-section-5 .image5,
-.store-section-6 .image5 {
+.store-section-5 .image5, .store-section-6 .image5 {
   width: 399.99px;
   height: 499.99px;
   transition-duration: 0.5s;
@@ -1349,23 +1266,20 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
   cursor: pointer;
 }
-.store-section-5 .image5:hover,
-.store-section-6 .image5:hover {
+.store-section-5 .image5:hover, .store-section-6 .image5:hover {
   width: 403px;
   height: 503px;
   transition-duration: 0.5s;
   box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
 }
-.store-section-5 img,
-.store-section-6 img {
+.store-section-5 img, .store-section-6 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
 }
-.store-section-5 .thin-image5,
-.store-section-6 .thin-image5 {
+.store-section-5 .thin-image5, .store-section-6 .thin-image5 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1379,15 +1293,13 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   background-color: #fff;
   cursor: pointer;
 }
-.store-section-5 .thin-image5:hover,
-.store-section-6 .thin-image5:hover {
+.store-section-5 .thin-image5:hover, .store-section-6 .thin-image5:hover {
   width: 316px;
   height: 503px;
   transition-duration: 0.5s;
   box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
 }
-.store-section-5 .small-img,
-.store-section-6 .small-img {
+.store-section-5 .small-img, .store-section-6 .small-img {
   width: 230px;
   height: 230px;
   -o-object-fit: cover;
@@ -1395,14 +1307,12 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   margin-bottom: 8rem;
   transition-duration: 0.5s;
 }
-.store-section-5 .small-img:hover,
-.store-section-6 .small-img:hover {
+.store-section-5 .small-img:hover, .store-section-6 .small-img:hover {
   width: 234px;
   height: 234px;
   transition-duration: 0.5s;
 }
-.store-section-5 .circle-color5,
-.store-section-6 .circle-color5 {
+.store-section-5 .circle-color5, .store-section-6 .circle-color5 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1414,72 +1324,62 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   bottom: 11rem;
   left: 2.5rem;
 }
-.store-section-5 .circle-color5 img,
-.store-section-6 .circle-color5 img {
+.store-section-5 .circle-color5 img, .store-section-6 .circle-color5 img {
   width: 12px;
   height: 12px;
   margin: 3px;
 }
-.store-section-5 .card-text5,
-.store-section-6 .card-text5 {
+.store-section-5 .card-text5, .store-section-6 .card-text5 {
   position: relative;
   bottom: 29.5rem;
   left: 1.5rem;
 }
-.store-section-5 .card-small-text5,
-.store-section-6 .card-small-text5 {
+.store-section-5 .card-small-text5, .store-section-6 .card-small-text5 {
   position: relative;
   bottom: 10rem;
   left: 1.5rem;
   width: 252px;
 }
-.store-section-5 .card-text-white-color5 h3,
-.store-section-6 .card-text-white-color5 h3 {
+.store-section-5 .card-text-white-color5 h3, .store-section-6 .card-text-white-color5 h3 {
   font-size: 0.7rem;
   font-weight: 600;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #F5F5F7;
 }
-.store-section-5 .card-text-white-color5 p,
-.store-section-6 .card-text-white-color5 p {
+.store-section-5 .card-text-white-color5 p, .store-section-6 .card-text-white-color5 p {
   font-size: 1.7rem;
   font-weight: 500;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #fff;
 }
-.store-section-5 .card-text-white-color5 span,
-.store-section-6 .card-text-white-color5 span {
+.store-section-5 .card-text-white-color5 span, .store-section-6 .card-text-white-color5 span {
   font-size: 1rem;
   font-weight: 400;
   text-align: left;
   color: #fff;
 }
-.store-section-5 .card-text-black-color5 p,
-.store-section-6 .card-text-black-color5 p {
+.store-section-5 .card-text-black-color5 p, .store-section-6 .card-text-black-color5 p {
   font-size: 1.7rem;
   font-weight: 500;
   text-align: left;
 }
-.store-section-5 h3,
-.store-section-6 h3 {
+.store-section-5 h3, .store-section-6 h3 {
   font-size: 0.8rem;
   font-weight: 400;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #BF4800;
 }
-.store-section-5 p,
-.store-section-6 p {
+.store-section-5 p, .store-section-6 p {
   font-size: 1rem;
   font-weight: 600;
   text-align: left;
   margin-bottom: 2rem;
   color: #1D1D1F;
 }
-.store-section-5 span,
-.store-section-6 span {
+.store-section-5 span, .store-section-6 span {
   font-size: 0.9rem;
   font-weight: 400;
   text-align: left;
@@ -1598,8 +1498,7 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
      object-fit: cover;
   height: 17rem;
 }
-.store-section-7 .swiper-button-next,
-.store-section-7 .swiper-button-prev {
+.store-section-7 .swiper-button-next, .store-section-7 .swiper-button-prev {
   opacity: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2509803922);
@@ -1607,8 +1506,10 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   border-radius: 50%;
   transition-duration: 0.5s;
 }
-.store-section-7 .karusell-7:hover .swiper-button-next,
-.store-section-7 .karusell-7:hover .swiper-button-prev {
+.store-section-7 .swiper-button-next:active, .store-section-7 .swiper-button-prev:active {
+  background-color: hsla(0deg, 0%, 0%, 0.351);
+}
+.store-section-7 .karusell-7:hover .swiper-button-next, .store-section-7 .karusell-7:hover .swiper-button-prev {
   opacity: 1;
   transform: scale(1.1);
 }
