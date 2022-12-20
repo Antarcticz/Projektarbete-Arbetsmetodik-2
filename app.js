@@ -82,4 +82,16 @@ var swiper = new Swiper(".karusell-7", {
   },
 });
 
+var swiper = new Swiper(".section-2", {
+  slidesPerView: 4.5,
+  spaceBetween: 200,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 

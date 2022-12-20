@@ -281,10 +281,6 @@
 
     .card {
         @include flex(row, center, center, nowrap);
-
-        @media screen and (max-width: 1820px) {
-            margin-left: 6rem;
-        }
     }
 
     .image {

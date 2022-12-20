@@ -835,11 +835,6 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   align-items: center;
   flex-wrap: nowrap;
 }
-@media screen and (max-width: 1820px) {
-  .store-section-2 .card {
-    margin-left: 6rem;
-  }
-}
 .store-section-2 .image {
   width: 399.99px;
   height: 499.99px;
