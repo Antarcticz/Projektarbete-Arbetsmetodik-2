@@ -12,7 +12,7 @@ slide.forEach((s, i) => {
 })
 
 // Swiper JS    
-var swiper = new Swiper(".karusell-2-8", {
+var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4.5,
   spaceBetween: 1,
   slidesPerGroup: 1,
@@ -73,18 +73,6 @@ var swiper = new Swiper(".felix", {
 var swiper = new Swiper(".karusell-7", {
   slidesPerView: 2.5,
   spaceBetween: 15,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-var swiper = new Swiper(".karusell-5-6", {
-  slidesPerView: 5.5,
-  spaceBetween: 1,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
