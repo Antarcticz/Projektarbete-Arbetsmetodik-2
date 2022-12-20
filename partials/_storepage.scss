@@ -230,7 +230,7 @@
         object-fit: cover;
     }
 }
-// --------------------------------------------Section 2---------------------------------------------------
+// --------------------------------------------Section 2, 8---------------------------------------------------
 .store-header-wrapper {
     @include flex(row, center, center, nowrap);
     margin-right: 25%;
@@ -248,12 +248,12 @@
     }
 }
 
-.store-section-2 {
+.store-section-2, .store-section-8 {
     @include flex(row, center, center, nowrap);
     width: 100%;
 
     .container {
-        @include size(90%, 58vh);
+        @include size(100%, 58vh);
 
     }
 
@@ -281,6 +281,10 @@
 
     .card {
         @include flex(row, center, center, nowrap);
+
+        @media screen and (max-width: 1820px) {
+            margin-left: 6rem;
+        }
     }
 
     .image {
@@ -317,8 +321,16 @@
             color: #F5F5F7;
         }
 
-        p,
-        span {
+        p, span {
+            color: #fff;
+        }
+    }
+    .card-text-white-color2 {
+        h3 {
+            color: #86868B;
+        }
+
+        p {
             color: #fff;
         }
     }
@@ -437,7 +449,7 @@
 }
 
 
-// --------------------------------------------Section 5 - 6---------------------------------------------------
+// --------------------------------------------Section 5, 6---------------------------------------------------
 .store-header-wrapper5 {
     @include flex(row, center, center, nowrap);
     margin-right: 16.5%;
