@@ -1206,6 +1206,130 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   color: #1D1D1F;
 }
 
+.store-section-7 {
+  width: 100%;
+  padding-top: 6rem;
+}
+.store-section-7 h3 {
+  font-size: 30px;
+  font-weight: 500;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  letter-spacing: 0.3px;
+  margin-bottom: 1rem;
+}
+.store-section-7 h3 span {
+  color: #6e6e73;
+}
+.store-section-7 .karusell-7 {
+  width: 90%;
+  padding: 20px 0;
+}
+.store-section-7 .karusell-7 .swiper-slide {
+  height: 35rem;
+  border-radius: 20px;
+  max-width: 33rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -0.5px 0.5px 10px 0.5px rgba(0, 0, 0, 0.062745098);
+  transition: all 500ms ease;
+  position: relative;
+  cursor: pointer;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text {
+  position: absolute;
+  color: white;
+  top: 2.5rem;
+  left: 2rem;
+  width: 70%;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text .black {
+  position: absolute;
+  color: black;
+  font-weight: 400;
+  top: 1rem;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text .grey {
+  color: grey;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text .applecare-h4 {
+  color: black;
+  font-size: 33px;
+  padding-top: 20px;
+  font-weight: 400;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text .applecare-p {
+  color: black;
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 15px;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text p {
+  font-size: 33px;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text .h5-black {
+  color: grey;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+}
+.store-section-7 .karusell-7 .swiper-slide .swiper-text .p-black {
+  color: black;
+}
+.store-section-7 .karusell-7 .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 35rem;
+}
+.store-section-7 .karusell-7 .swiper-slide:hover {
+  box-shadow: -1px 1px 10px 2px rgba(0, 0, 0, 0.1882352941);
+  transform: scale(1.01);
+}
+.store-section-7 .karusell-7 .vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 33rem;
+  margin-right: 15px;
+}
+.store-section-7 .karusell-7 .vertical div {
+  height: 17rem;
+  max-width: 33rem;
+  position: relative;
+}
+.store-section-7 .karusell-7 .vertical div .vertical-swiper-text {
+  position: absolute;
+  top: 25%;
+  left: 2rem;
+}
+.store-section-7 .karusell-7 .vertical div .vertical-swiper-text p {
+  font-size: 28px;
+  font-weight: 400;
+}
+.store-section-7 .karusell-7 .vertical div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 17rem;
+}
+.store-section-7 .swiper-button-next, .store-section-7 .swiper-button-prev {
+  opacity: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  padding: 2rem;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+.store-section-7 .karusell-7:hover .swiper-button-next, .store-section-7 .karusell-7:hover .swiper-button-prev {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .footnote-1 {
   width: 100%;
   padding-top: 20px;

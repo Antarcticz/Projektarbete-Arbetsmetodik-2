@@ -628,3 +628,132 @@
         color: #1D1D1F;
     }
 }
+
+// --------------------------------------------Section 7 - 6---------------------------------------------------
+
+.store-section-7 {
+    width: 100%;
+    padding-top: 6rem;
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+        width: 70%;
+        display: flex;
+        margin: auto;
+        letter-spacing: .3px;
+        margin-bottom: 1rem;
+        span {
+            color: #6e6e73;
+        }
+    }
+    .karusell-7 {
+        width: 90%;
+        padding: 20px 0;
+        .swiper-slide {
+            height: 35rem;
+            border-radius: 20px;
+            max-width: 33rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
+            transition: all 500ms ease;
+            position: relative;
+            cursor: pointer;
+            .swiper-text {
+                position: absolute;
+                color: white;
+                top: 2.5rem;
+                left: 2rem;
+                width: 70%;
+                .black {
+                    position: absolute;
+                    color: black;
+                    font-weight: 400;
+                    top: 1rem;
+                }
+                .grey {
+                    color: grey;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                }
+                .applecare-h4 {
+                    color: black;
+                    font-size: 33px;
+                    padding-top: 20px;
+                    font-weight: 400;
+                }
+                .applecare-p {
+                    color: black;
+                    font-weight: 300;
+                    font-size: 18px;
+                    padding-top: 15px;
+                }
+                p {
+                    font-size: 33px;
+                }
+                .h5-black {
+                    color: grey;
+                    font-weight: 400;
+                    letter-spacing: .5px;
+
+                    padding-bottom: 20px;
+
+                }
+                .p-black {
+                    color: black;
+                }
+            }
+            
+
+            img {
+                object-fit: cover;
+                height: 35rem;
+            }
+        }
+        .swiper-slide:hover {
+            box-shadow: -1px 1px 10px 2px #00000030;
+            transform: scale(1.01);
+        }
+        .vertical {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 33rem;
+            margin-right: 15px;
+            div {
+                height: 17rem;
+                max-width: 33rem;
+                position: relative;
+                .vertical-swiper-text {
+                    position: absolute;
+                    top: 25%;
+                    left: 2rem;
+                    p {
+                        font-size: 28px;
+                        font-weight: 400;
+                    }
+                }
+                img {
+                    object-fit: cover;
+                    height: 17rem;
+                }
+            }
+        }
+
+    }
+    .swiper-button-next, .swiper-button-prev {
+        opacity: 0;
+        color: #fff;
+        background-color: #00000040;
+        padding: 2rem;
+        border-radius: 50%;
+        transition-duration: 0.5s;
+    }
+    .karusell-7:hover .swiper-button-next, .karusell-7:hover .swiper-button-prev {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
