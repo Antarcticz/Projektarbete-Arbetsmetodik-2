@@ -1,5 +1,4 @@
 main {
-  border: 1px solid black;
   @include size (100%, auto);
   background-color: #ffffff;
   display: flex;
@@ -330,7 +329,7 @@ main {
 }
 
 .sixth-row {
-  @include size (100%, 21.7rem);
+  @include size (100%, 25.7rem);
   border: 1px solid #c5c1c1;
   display: flex;
   flex-direction: row;
@@ -407,7 +406,6 @@ main {
 
 .seven-row {
   @include size (100%, 21.7rem);
-  border: 1px solid #c5c1c1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -456,6 +454,7 @@ main {
       .seven-row-link {
         @include size (auto, 4rem);
         display: flex;
+        padding-top: 1rem;
 
         a {
           text-decoration: none;
@@ -535,7 +534,13 @@ main {
         margin-inline-end: 0px;
 
         a {
+          text-decoration: none;
           color: #0070c9;
+
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -544,7 +549,7 @@ main {
 
 .ninth-row {
   @include size (100%, 20.7rem);
-  border: 1px solid #c5c1c1;
+  border-bottom: 1px solid #c5c1c1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -585,7 +590,13 @@ main {
         margin-inline-end: 0px;
 
         a {
+          text-decoration: none;
           color: #0070c9;
+
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -612,8 +623,9 @@ main {
 
 .warning-row {
   @include size (100%, 17.7rem);
-  border: 1px solid #c5c1c1;
   display: flex;
+  border-bottom: 1px solid #c5c1c1;
+  ;
   justify-content: center;
 
   .warning-middle-box {
@@ -662,8 +674,9 @@ main {
   justify-content: center;
 
   .apple-service-content {
-    @include size (45rem, auto);
+    @include size (60rem, auto);
     padding-top: 40px;
+    padding-right: 4rem;
 
     h3 {
       font-size: 27px;
