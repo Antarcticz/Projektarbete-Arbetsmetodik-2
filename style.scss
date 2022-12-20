@@ -38,138 +38,69 @@ body {
     }
 }
 
-.store-section-3 {
-    @include flex(row, center, center, nowrap);
-    width: 100%;
-
-    .container {
-        @include size(100%, 58vh);
-
-    }
-
-    .swiper-slide {
-        @include size(400px, 500px);
-        margin: auto;
-    }
+// .bottom-section-1 {
+//     width: 100%;
+//     height: auto;
+//     display: flex;
+//     flex-direction: row;
+//     text-align: center;
+//     font-size: 14px;
+//     position: relative;
+//     bottom: 10rem;
+//     right: 20rem;
 
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: #fff;
-        background-color: #00000040;
-        padding: 2rem;
-        border-radius: 50%;
-        opacity: 0%;
-        transition-duration: 0.5s;
-    }
-
-    .swiper:hover .swiper-button-next,
-    .swiper:hover .swiper-button-prev {
-        opacity: 100%;
-        transition-duration: 0.5s;
-    }
-
-    .card-content {
-        @include size(400px, 500px);
-    }
-
-    .card {
-        @include flex(row, center, center, nowrap);
-
-        @media screen and (max-width: 1820px) {
-            margin-left: 6rem;
-        }
-    }
-
-    #wider-card {
-        @include flex(row, center, center, nowrap);
-    }
-
-    .image {
-        @include size(499.99px, 499.99px);
-        transition-duration: 0.5s;
-        border-radius: 1rem;
-        box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
-        cursor: pointer;
+//     .container {
+//         @include size(30rem, 58vh);
 
 
-    }
+//     }
 
-    .image:hover {
-        @include size(510px, 510px);
-        transition-duration: 0.5s;
-        box-shadow: -1px 1px 10px 2px #00000030;
+//     .image-small {
+//         width: 4rem;
+//         height: 9rem;
+//     }
 
-    }
+//     .swiper-button-next,
+//     .swiper-button-prev {
+//         color: rgb(0, 0, 0);
+//         background-color: #ffffff40;
+//         padding: 1rem;
+//         border-radius: 50%;
+//         transition-duration: 0.5s;
+//     }
 
-    .image-small {
-        @include size(399.99px, 499.99px);
-        transition-duration: 0.5s;
-        border-radius: 1rem;
-        box-shadow: -0.5px 0.5px 10px 0.5px #00000010;
-        cursor: pointer;
-
-    }
+//     .swiper:hover .swiper-button-next,
+//     .swiper:hover .swiper-button-prev {
+//         opacity: 100%;
+//         transition-duration: 10.5s;
+//     }
 
 
 
-    .image-small:hover {
-        @include size(403px, 503px);
-        transition-duration: 0.5s;
-        box-shadow: -1px 1px 10px 2px #00000030;
+//     #store-cards {
+//         width: 9rem;
+//         height: 8rem;
 
-    }
+//     }
 
-    img {
-        @include size(100%, 100%);
-        object-fit: cover;
-        border-radius: 1rem;
+//     .card {
+//         width: auto;
+//         height: 9rem;
+//         display: flex;
+//         justify-content: space-around;
+//         margin: auto;
+//         border: 1px solid black;
 
-    }
+//         .image-small {
+//             width: auto;
+//             text-align: center;
+//             border: 1px solid black;
+//         }
+//     }
 
-    .card-text {
-        position: relative;
-        bottom: 29.5rem;
-        left: 1.5rem;
-    }
 
-    .card-text-white-color {
-        h3 {
-            color: #F5F5F7;
-        }
 
-        p,
-        span {
-            color: #fff;
-        }
-    }
 
-    h3 {
-        @include text-size(1.7rem, 600, left);
-        margin-bottom: 0.5rem;
-        color: #ffffff;
-    }
 
-    p {
-        @include text-size(0.7rem, 500, left);
-        margin-bottom: 0.5rem;
-        color: #fbfbff;
-    }
-
-    span {
-        @include text-size(1rem, 400, left);
-        color: #ffffff;
-    }
-
-    #grey-color {
-        @include text-size(0.7rem, 500, left);
-        margin-bottom: 0.5rem;
-        color: #39393b;
-    }
-
-    #black-color {
-        @include text-size(1.7rem, 600, left);
-        margin-bottom: 0.5rem;
-        color: #000000;
-    }
-}
+// }
