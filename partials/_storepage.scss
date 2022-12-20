@@ -757,3 +757,37 @@
         transform: scale(1.1);
     }
 }
+
+.quick-links-wrapper {
+    margin-top: 2rem;
+    width: 100%;
+    .quick-links {
+        width: 80%;
+        margin: auto;
+        h3 {
+            font-size: 30px;
+            color: #1d1d1f;
+            font-weight: 500;
+            line-height: 90px;
+        }
+        .links {
+            display: flex;
+            width: 33%;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            .quick-links-button {
+                display: inline-block;
+                white-space: nowrap;
+                font-size: 16px;
+                font-weight: 400;
+                background-color: #e8e8ed;
+                padding: 10px 18px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .quick-links-button:hover {
+                filter: brightness(1.015);
+            }
+        }
+    }
+}
