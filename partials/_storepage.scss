@@ -779,6 +779,9 @@
         border-radius: 50%;
         transition-duration: 0.5s;
     }
+    .swiper-button-next:active, .swiper-button-prev:active {
+        background-color: hsla(0, 0%, 0%, 0.351);
+    }
     .karusell-7:hover .swiper-button-next, .karusell-7:hover .swiper-button-prev {
         opacity: 1;
         transform: scale(1.1);

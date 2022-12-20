@@ -1360,6 +1360,9 @@ main .cards-content .speaker-wrapper #lowerLink:hover {
   border-radius: 50%;
   transition-duration: 0.5s;
 }
+.store-section-7 .swiper-button-next:active, .store-section-7 .swiper-button-prev:active {
+  background-color: hsla(0deg, 0%, 0%, 0.351);
+}
 .store-section-7 .karusell-7:hover .swiper-button-next, .store-section-7 .karusell-7:hover .swiper-button-prev {
   opacity: 1;
   transform: scale(1.1);
