@@ -5,7 +5,6 @@ main {
   flex-direction: column;
 }
 
-
 .top-wrapper {
   @include background-image(url("/support-images/psp-hero-banner-homepage-welcome.image.large_2x.jpg"));
   height: 50vh;
@@ -34,7 +33,6 @@ main {
     flex-direction: column;
     align-items: center;
 
-
     #support-content-image {
       @include size (4.5rem, auto);
       margin-bottom: 1rem;
@@ -57,7 +55,6 @@ main {
   @include size (100%, 12rem);
   border-top: 1px solid #dddddd;
   @include flex (row, center, center, wrap);
-
 
   .second-row-promotion {
     width: 70rem;
@@ -109,7 +106,6 @@ main {
     font-weight: 500;
     position: relative;
     top: 2rem;
-
   }
 
   .search-bar-content {
@@ -125,7 +121,6 @@ main {
       border: 1px solid #c5c1c1;
       background-position: 0.5rem;
       border-radius: 2px;
-
     }
 
     input::placeholder {
@@ -227,7 +222,6 @@ main {
         font-size: 40px;
         color: white;
         font-weight: 400;
-
       }
     }
 
@@ -239,7 +233,6 @@ main {
         font-size: 20px;
         color: white;
         font-weight: 400;
-
       }
     }
 
@@ -256,8 +249,6 @@ main {
         &:hover {
           text-decoration: underline;
         }
-
-
       }
     }
   }
@@ -284,7 +275,6 @@ main {
           font-size: 40px;
           font-weight: 500;
         }
-
       }
 
       .fifth-row-text {
@@ -314,7 +304,6 @@ main {
           }
         }
       }
-
     }
 
     .fifth-box-image {
@@ -362,7 +351,6 @@ main {
         flex-direction: column;
       }
 
-
       .sixth-row-header {
         @include size (100%, 18rem);
 
@@ -370,7 +358,6 @@ main {
           font-size: 40px;
           font-weight: 500;
         }
-
       }
 
       .sixth-row-text {
@@ -438,7 +425,6 @@ main {
           font-size: 40px;
           font-weight: 500;
         }
-
       }
 
       .seven-row-text {
@@ -500,7 +486,6 @@ main {
         letter-spacing: .015em;
         padding: 12px;
       }
-
     }
 
     .eight-text {
@@ -572,7 +557,6 @@ main {
         letter-spacing: .015em;
         padding: 12px;
       }
-
     }
 
     .eight-text {
@@ -615,7 +599,6 @@ main {
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-
       }
     }
   }
@@ -625,7 +608,6 @@ main {
   @include size (100%, 17.7rem);
   display: flex;
   border-bottom: 1px solid #c5c1c1;
-  ;
   justify-content: center;
 
   .warning-middle-box {
@@ -821,7 +803,6 @@ main {
         margin-right: 20px;
         color: rgba(0, 0, 0, 0.378);
       }
-
     }
   }
 }
